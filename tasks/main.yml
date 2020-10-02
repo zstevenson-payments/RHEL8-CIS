@@ -24,7 +24,7 @@
 
 - include: parse_etc_password.yml
   become: yes
-  when: rhel8cis_section6 or rhel8cis_section6
+  when: rhel8cis_section5 or rhel8cis_section6
 
 - include: section1.yml
   become: yes
