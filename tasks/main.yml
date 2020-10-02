@@ -24,33 +24,43 @@
 
 - include: parse_etc_password.yml
   become: yes
-  when: rhel8cis_section6|bool
+  when: rhel8cis_section6 or rhel8cis_section6
 
 - include: section1.yml
   become: yes
   when: rhel8cis_section1|bool
   tags:
-      - rhel8cis_section1
+  - rhel8cis_section1
 
 - include: section2.yml
   become: yes
   when: rhel8cis_section2|bool
+  tags:
+  - rhel8cis_section2
 
 - include: section3.yml
   become: yes
   when: rhel8cis_section3|bool
+  tags:
+  - rhel8cis_section3
 
 - include: section4.yml
   become: yes
   when: rhel8cis_section4|bool
+  tags:
+  - rhel8cis_section4
 
 - include: section5.yml
   become: yes
   when: rhel8cis_section5|bool
+  tags:
+  - rhel8cis_section5
 
 - include: section6.yml
   become: yes
   when: rhel8cis_section6|bool
+  tags:
+  - rhel8cis_section6
 
 - include: post.yml
   become: yes
