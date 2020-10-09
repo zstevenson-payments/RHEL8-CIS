@@ -16,7 +16,7 @@
   This is the Center for Internet Security Configuration Assessment Tool, v4.0.24
           At any time during the selection process, enter 'q!' to exit.
 --------------------------------------------------------------------------------------
-a;lsdkfj;alskjf;alskjf		
+		
 Verifying application
 
 Configured report output directory to '/var/tmp/cis/reports'
