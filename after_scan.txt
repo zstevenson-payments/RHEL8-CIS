@@ -43,7 +43,7 @@ Interfaces:
    MAC: 02:a7:d2:0c:29:5f
 -----------------------------------------------------------------------------
 
-Starting Assessment - Date & Time: 10-08-2020 05:26:08
+Starting Assessment - Date & Time: 10-09-2020 13:26:08
 -----------------------------------------------------------------------------
  Checklist Title: CIS Red Hat Enterprise Linux 8 Benchmark
     Checklist ID: xccdf_org.cisecurity.benchmarks_benchmark_1.0.0.1_CIS_Red_Hat_Enterprise_Linux_8_Benchmark
