@@ -1,0 +1,1012 @@
+
+--------------------------------------------------------------------------------------
+   ,o88888o.    8888    d888888o.          ,o88888o.           8.    8888888888888888 
+  8888    `88.  8888  .`8888:' `88.       8888    `88.        .88.         8888       
+,88888      `8. 8888  8.`8888.   Y8     ,88888      `8.      .8888.        8888       
+888888          8888  `8.`8888.         888888              .`88888.       8888       
+888888          8888   `8.`8888.   888  888888             .8.`88888.      8888       
+888888          8888    `8.`8888.  888  888888            .8`8.`88888.     8888       
+888888          8888     `8.`8888.      888888           .8' `8.`88888.    8888       
+`88888      .8' 8888 8b   `8.`8888.     `88888      .8' .8'   `8.`88888.   8888       
+  8888    ,88'  8888 `8b.  ;8.`8888       8888    ,88' .888888888.`88888.  8888       
+   `888888P'    8888  `Y8888P ,88P'        `888888P'  .8'       `8.`88888. 8888       
+--------------------------------------------------------------------------------------
+         Welcome to CIS-CAT Pro Assessor CLI; built on 10/01/2020 02:02 AM
+--------------------------------------------------------------------------------------
+  This is the Center for Internet Security Configuration Assessment Tool, v4.0.24
+          At any time during the selection process, enter 'q!' to exit.
+--------------------------------------------------------------------------------------
+		
+Verifying application
+
+Configured report output directory to '/var/tmp/cis/reports'
+Configured report naming prefix to 'after'
+Attempting to load the default sessions.properties, bundled with the application.
+Obtaining session connection --> Local
+Connection established.  
+Assessment File CIS_Red_Hat_Enterprise_Linux_8_Benchmark_v1.0.0.1-xccdf.xml has a valid Signature.
+Selected Checklist 'CIS Red Hat Enterprise Linux 8 Benchmark'
+Selected Profile 'Level 1 - Server'
+Starting Assessment
+----------------------- ASSESSMENT TARGET -----------------------------------
+       Hostname: ip-172-16-24-163.us-west-1.compute.internal
+        OS Name: linux
+     OS Version: 4.18.0-193.el8.x86_64
+OS Architecture: x86_64
+
+Interfaces:
+  Name: lo
+    IP: 127.0.0.1
+   MAC: 00:00:00:00:00:00
+  Name: eth0
+    IP: 172.16.24.163
+   MAC: 02:a7:d2:0c:29:5f
+-----------------------------------------------------------------------------
+
+Starting Assessment - Date & Time: 10-08-2020 05:26:08
+-----------------------------------------------------------------------------
+ Checklist Title: CIS Red Hat Enterprise Linux 8 Benchmark
+    Checklist ID: xccdf_org.cisecurity.benchmarks_benchmark_1.0.0.1_CIS_Red_Hat_Enterprise_Linux_8_Benchmark
+   Profile Title: Level 1 - Server
+      Profile ID: xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server
+
+Assessing Platform Applicability
+- Resolving Values.................................................................................. <1 second: Done
+- Collecting System Characteristics
+- Evaluating Definitions
+
+
+Starting assessment of OVAL Definitions:
+- Resolving Values.................................................................................. 3 seconds: Done
+
+- Collecting System Characteristics
+-- [obj:659432] Ensure kernel module cramfs is not loadable......................................... <1 second: Collected
+-- [obj:659435] Ensure kernel module cramfs is not loaded........................................... <1 second: Collected
+-- [obj:659444] Ensure kernel module squashfs is not loadable....................................... <1 second: Collected
+-- [obj:659446] Ensure kernel module squashfs is not loaded......................................... <1 second: Collected
+-- [obj:659452] Ensure kernel module udf is not loadable............................................ <1 second: Collected
+-- [obj:659456] Ensure kernel module udf is not loaded.............................................. <1 second: Collected
+-- [obj:659226] Ensure partition at /tmp  and all................................................... <1 second: Collected
+-- [obj:659168] Ensure partition at /tmp may exists...t one partition option equals 'nodev' (string) <1 second: Collected
+-- [obj:659172] Ensure partition at /tmp may exists... one partition option equals 'nosuid' (string) <1 second: Collected
+-- [obj:659176] Ensure partition at /tmp may exists{else}exists and all............................. <1 second: Collected
+-- [obj:659184] Ensure partition at /var/tmp may exists{else}exists and all......................... <1 second: Collected
+-- [obj:659188] Ensure partition at /var/tmp may exists{else}exists and all......................... <1 second: Collected
+-- [obj:659191] Ensure partition at /var/tmp may exists{else}exists and all......................... <1 second: Collected
+-- [obj:659203] Ensure partition at /home may exists{else}exists and all............................ <1 second: Collected
+-- [obj:659207] Ensure partition at /dev/shm may exists{else}exists and all......................... <1 second: Collected
+-- [obj:659211] Ensure partition at /dev/shm may exists{else}exists and all......................... <1 second: Collected
+-- [obj:659214] Ensure partition at /dev/shm may exists{else}exists and all......................... <1 second: Collected
+-- [obj:659224] Ensure standard service 'autofs' is disabled........................................ <1 second: Collected
+-- [obj:689827] Ensure kernel module usb-storage is not loaded...................................... <1 second: Collected
+-- [obj:689828] Ensure kernel module usb-storage is not loadable.................................... <1 second: Collected
+-- [obj:689829] Ensure standard service 'rhnsd' is disabled......................................... <1 second: Collected
+-- [obj:659186] Ensurefile(s) named .* in /etc/yum....s pattern ^\s*gpgcheck\s*=\s*[^1]\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659187] Ensure at least one file named /etc...ches pattern ^\s*gpgcheck\s*=\s*1\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659190] Ensure no file named /etc/yum.conf ...s pattern ^\s*gpgcheck\s*=\s*[^1]\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659238] Ensure package name equals 'sudo' is installed...................................... <1 second: Collected
+-- [obj:659242] Ensure at least one file named /etc...s\s+([^#]+,\s*)?use_pty(,\s+\S+\s*)*(\s+#.*)?$ <1 second: Collected
+-- [obj:659245] Ensure at least one file named /etc...s\s+([^#]+,\s*)?use_pty(,\s+\S+\s*)*(\s+#.*)?$ <1 second: Collected
+-- [obj:659249] Ensure at least one file named /etc...^#]+,\s*)?logfile="\S+"(,\s+\S+\s*)*(\s+#.*)?$ <1 second: Collected
+-- [obj:659252] Ensure any file(s) named ^.+$ in /e...^#]+,\s*)?logfile="\S+"(,\s+\S+\s*)*(\s+#.*)?$ <1 second: Collected
+-- [obj:677482] Ensure package name equals 'aide' is installed...................................... <1 second: Collected
+-- [obj:659198] Ensure at least one file named /var...s+){5}\/usr\/sbin\/aide\s+--check\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659202] Ensure at least one file named /etc...s+)?)?\/usr\/sbin\/aide\s+--check\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659204] Ensure at least one file(s) named ....s+)?)?\/usr\/sbin\/aide\s+--check\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659208] Ensure at least one file(s) named ....and matches pattern ^\s*/usr/sbin/aide --check <1 second: Collected
+-- [obj:659210] Ensure at least one file(s) named ....and matches pattern ^\s*/usr/sbin/aide --check <1 second: Collected
+-- [obj:659213] Ensure at least one file(s) named ....and matches pattern ^\s*/usr/sbin/aide --check <1 second: Collected
+-- [obj:659216] Ensure at least one file(s) named ....and matches pattern ^\s*/usr/sbin/aide --check <1 second: Collected
+-- [obj:659218] Ensure standard service 'aidecheck.service' is enabled.............................. <1 second: Collected
+-- [obj:659222] Ensure standard service 'aidecheck.timer' is enabled................................ <1 second: Collected
+-- [obj:659217] Ensure at least one file named /boo...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
+-- [obj:659221] Ensure at least one file named /boo...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
+-- [obj:659225] Ensure at least one file named /boo...d matches pattern ^\s*GRUB2_PASSWORD\s*=\s*.+$ <1 second: Collected
+-- [obj:659230] Ensure at least one file named /usr...d-sulogin-shell(\s+emergency|\s*)\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659231] Ensure at least one file named /usr...d-sulogin-shell(\s+rescue\s*|\s*)\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659227] Ensure at least one file named /etc... pattern ^\s*\*\s+hard\s+core\s+0\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659229] Ensure at least one file(s) named .... pattern ^\s*\*\s+hard\s+core\s+0\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:689830] Ensure at least one file named /etc...ern ^\s*fs\.suid_dumpable\s*=\s*0\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:689831] Ensure at least one file(s) named ....ern ^\s*fs\.suid_dumpable\s*=\s*0\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:689832] Ensure no file named /etc/sysctl.co...ttern kernel.randomize_va_space\s*=\s*[^2]\s*$ <1 second: Collected
+-- [obj:689833] Ensurefile(s) named ^\S+\.conf$ in ...ttern kernel.randomize_va_space\s*=\s*[^2]\s*$ <1 second: Collected
+-- [obj:689834] Ensurefile(s) named ^\S+\.conf$ in ...ttern kernel.randomize_va_space\s*=\s*[^2]\s*$ <1 second: Collected
+-- [obj:689835] Ensurefile(s) named ^\S+\.conf$ in ...ttern kernel.randomize_va_space\s*=\s*[^2]\s*$ <1 second: Collected
+-- [obj:689840] Ensure at least one file named /etc/issue exists and matches pattern ^.+$........... <1 second: Collected
+-- [obj:689841] Ensure at least one file named /etc/issue.net exists and matches pattern ^.+$....... <1 second: Collected
+-- [obj:659476] Ensure at least one file named /etc...ot have permissions --x-wx-wx SUID SGID sticky <1 second: Collected
+-- [obj:724317] Ensure no file named /etc/motd exists and matches pattern ^.*$...................... <1 second: Collected
+-- [obj:659484] Ensure at least one file named /etc...ot have permissions --x-wx-wx SUID SGID sticky <1 second: Collected
+-- [obj:659495] Ensure at least one file named /etc...ot have permissions --x-wx-wx SUID SGID sticky <1 second: Collected
+-- [obj:659233] Ensure at least one file named /etc...d matches pattern ^\[org/gnome/login-screen\]$ <1 second: Collected
+-- [obj:659236] Ensure at least one file named /etc...d matches pattern ^banner-message-enable=true$ <1 second: Collected
+-- [obj:659240] Ensure at least one file named /etc...and matches pattern ^banner-message-text='.+'$ <1 second: Collected
+-- [obj:659243] Ensure package name equals 'gdm' is not installed................................... <1 second: Collected
+-- [obj:659135] Ensure no file named /etc/crypto-po...nd matches pattern ^\s*(?i)LEGACY\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659139] Ensure package name equals 'xinetd' is not installed................................ <1 second: Collected
+-- [obj:659426] Ensure package name equals 'chrony' is installed.................................... <1 second: Collected
+-- [obj:659430] Ensure at least one file named /etc...ts and matches pattern ^\s*(server|pool)\s+\S+ <1 second: Collected
+-- [obj:659434] Linux Custom Object "chronyd is running as chrony user"............................. <1 second: Collected
+-- [obj:659437] Ensure package name equals 'chrony' is not installed................................ <1 second: Collected
+-- [obj:659140] Ensure package name pattern match '^xorg-x11.*' is not installed.................... <1 second: Collected
+-- [obj:659142] Ensure package name pattern match '^xserver-xorg.*' is not installed................ <1 second: Collected
+-- [obj:659174] Ensure standard service 'rsyncd' is disabled........................................ <1 second: Collected
+-- [obj:659144] Ensure standard service 'avahi-daemon' is disabled.................................. <1 second: Collected
+-- [obj:659167] Ensure standard service 'snmpd' is disabled......................................... <1 second: Collected
+-- [obj:659166] Ensure standard service 'squid' is disabled......................................... <1 second: Collected
+-- [obj:659164] Ensure standard service 'smb' is disabled........................................... <1 second: Collected
+-- [obj:659161] Ensure standard service 'dovecot' is disabled....................................... <1 second: Collected
+-- [obj:659159] Ensure standard service 'httpd' is disabled......................................... <1 second: Collected
+-- [obj:659157] Ensure standard service 'vsftpd' is disabled........................................ <1 second: Collected
+-- [obj:659155] Ensure standard service 'named' is disabled......................................... <1 second: Collected
+-- [obj:659153] Ensure standard service 'nfs-server' is disabled.................................... <1 second: Collected
+-- [obj:659179] Ensure standard service 'rpcbind' is disabled....................................... <1 second: Collected
+-- [obj:659151] Ensure standard service 'slapd' is disabled......................................... <1 second: Collected
+-- [obj:659148] Ensure standard service 'dhcpd' is disabled......................................... <1 second: Collected
+-- [obj:659146] Ensure standard service 'cups' is disabled.......................................... <1 second: Collected
+-- [obj:659177] Ensure standard service 'ypserv' is disabled........................................ <1 second: Collected
+-- [obj:659170] Linux Custom Object "No Servers Listening On Port 25"............................... <1 second: Collected
+-- [obj:659141] Ensure package name equals 'ypbind' is not installed................................ <1 second: Collected
+-- [obj:659143] Ensure package name equals 'telnet' is not installed................................ <1 second: Collected
+-- [obj:659145] Ensure package name equals 'openldap-clients' is not installed...................... <1 second: Collected
+-- [obj:659350] Ensure no file named /etc/sysctl.co...s pattern ^\s*net\.ipv4\.ip_forward\s*=\s*1\s* <1 second: Collected
+-- [obj:659354] Ensurefile(s) named ^\S+\.conf$ in ...s pattern ^\s*net\.ipv4\.ip_forward\s*=\s*1\s* <1 second: Collected
+-- [obj:659360] Ensurefile(s) named ^\S+\.conf$ in ...s pattern ^\s*net\.ipv4\.ip_forward\s*=\s*1\s* <1 second: Collected
+-- [obj:659364] Ensurefile(s) named ^\S+\.conf$ in ...s pattern ^\s*net\.ipv4\.ip_forward\s*=\s*1\s* <1 second: Collected
+-- [obj:659376] Ensure no file named /etc/sysctl.co...\s*net\.ipv6\.conf\.all\.forwarding\s*=\s*1\s* <1 second: Collected
+-- [obj:659380] Ensurefile(s) named ^\S+\.conf$ in ...\s*net\.ipv6\.conf\.all\.forwarding\s*=\s*1\s* <1 second: Collected
+-- [obj:659387] Ensurefile(s) named ^\S+\.conf$ in ...\s*net\.ipv6\.conf\.all\.forwarding\s*=\s*1\s* <1 second: Collected
+-- [obj:659393] Ensurefile(s) named ^\S+\.conf$ in ...\s*net\.ipv6\.conf\.all\.forwarding\s*=\s*1\s* <1 second: Collected
+-- [obj:6594012] Ensure 'net.ipv4.conf.all.send_redirects' kernel parameter Equals 0 (int).......... <1 second: Collected
+-- [obj:6594013] Ensure 'net.ipv4.conf.all.send_redirects' kernel parameter Equals 0 (int).......... <1 second: Collected
+-- [obj:6594011] Ensure 'net.ipv4.conf.all.send_redirects' kernel parameter Equals 0 (int).......... <1 second: Collected
+-- [obj:6594062] Ensure 'net.ipv4.conf.default.send_redirects' kernel parameter Equals 0 (int)...... <1 second: Collected
+-- [obj:6594063] Ensure 'net.ipv4.conf.default.send_redirects' kernel parameter Equals 0 (int)...... <1 second: Collected
+-- [obj:6594061] Ensure 'net.ipv4.conf.default.send_redirects' kernel parameter Equals 0 (int)...... <1 second: Collected
+-- [obj:6593472] Ensure 'net.ipv4.conf.all.accept_source_route' kernel parameter Equals 0 (int)..... <1 second: Collected
+-- [obj:6593473] Ensure 'net.ipv4.conf.all.accept_source_route' kernel parameter Equals 0 (int)..... <1 second: Collected
+-- [obj:6593471] Ensure 'net.ipv4.conf.all.accept_source_route' kernel parameter Equals 0 (int)..... <1 second: Collected
+-- [obj:6593512] Ensure 'net.ipv4.conf.default.accept_source_route' kernel parameter Equals 0 (int). <1 second: Collected
+-- [obj:6593513] Ensure 'net.ipv4.conf.default.accept_source_route' kernel parameter Equals 0 (int). <1 second: Collected
+-- [obj:6593511] Ensure 'net.ipv4.conf.default.accept_source_route' kernel parameter Equals 0 (int). <1 second: Collected
+-- [obj:6593562] Ensure 'net.ipv6.conf.all.accept_source_route' kernel parameter Equals 0 (int)..... <1 second: Collected
+-- [obj:6593563] Ensure 'net.ipv6.conf.all.accept_source_route' kernel parameter Equals 0 (int)..... <1 second: Collected
+-- [obj:6593561] Ensure 'net.ipv6.conf.all.accept_source_route' kernel parameter Equals 0 (int)..... <1 second: Collected
+-- [obj:6593592] Ensure 'net.ipv6.conf.default.accept_source_route' kernel parameter Equals 0 (int). <1 second: Collected
+-- [obj:6593593] Ensure 'net.ipv6.conf.default.accept_source_route' kernel parameter Equals 0 (int). <1 second: Collected
+-- [obj:6593591] Ensure 'net.ipv6.conf.default.accept_source_route' kernel parameter Equals 0 (int). <1 second: Collected
+-- [obj:6593652] Ensure 'net.ipv4.conf.all.accept_redirects' kernel parameter Equals 0 (int)........ <1 second: Collected
+-- [obj:6593653] Ensure 'net.ipv4.conf.all.accept_redirects' kernel parameter Equals 0 (int)........ <1 second: Collected
+-- [obj:6593651] Ensure 'net.ipv4.conf.all.accept_redirects' kernel parameter Equals 0 (int)........ <1 second: Collected
+-- [obj:6593682] Ensure 'net.ipv4.conf.all.accept_redirects' kernel parameter Equals 0 (int)........ <1 second: Collected
+-- [obj:6593683] Ensure 'net.ipv4.conf.all.accept_redirects' kernel parameter Equals 0 (int)........ <1 second: Collected
+-- [obj:6593681] Ensure 'net.ipv4.conf.all.accept_redirects' kernel parameter Equals 0 (int)........ <1 second: Collected
+-- [obj:6593722] Ensure 'net.ipv6.conf.all.accept_redirects' kernel parameter Equals 0 (int)........ <1 second: Collected
+-- [obj:6593723] Ensure 'net.ipv6.conf.all.accept_redirects' kernel parameter Equals 0 (int)........ <1 second: Collected
+-- [obj:6593721] Ensure 'net.ipv6.conf.all.accept_redirects' kernel parameter Equals 0 (int)........ <1 second: Collected
+-- [obj:6593772] Ensure 'net.ipv6.conf.default.accept_redirects' kernel parameter Equals 0 (int).... <1 second: Collected
+-- [obj:6593773] Ensure 'net.ipv6.conf.default.accept_redirects' kernel parameter Equals 0 (int).... <1 second: Collected
+-- [obj:6593771] Ensure 'net.ipv6.conf.default.accept_redirects' kernel parameter Equals 0 (int).... <1 second: Collected
+-- [obj:6593822] Ensure 'net.ipv4.conf.all.secure_redirects' kernel parameter Equals 0 (int)........ <1 second: Collected
+-- [obj:6593823] Ensure 'net.ipv4.conf.all.secure_redirects' kernel parameter Equals 0 (int)........ <1 second: Collected
+-- [obj:6593821] Ensure 'net.ipv4.conf.all.secure_redirects' kernel parameter Equals 0 (int)........ <1 second: Collected
+-- [obj:6593862] Ensure 'net.ipv4.conf.default.secure_redirects' kernel parameter Equals 0 (int).... <1 second: Collected
+-- [obj:6593863] Ensure 'net.ipv4.conf.default.secure_redirects' kernel parameter Equals 0 (int).... <1 second: Collected
+-- [obj:6593861] Ensure 'net.ipv4.conf.default.secure_redirects' kernel parameter Equals 0 (int).... <1 second: Collected
+-- [obj:6593912] Ensure 'net.ipv4.conf.all.log_martians' kernel parameter Equals 1 (int)............ <1 second: Collected
+-- [obj:6593913] Ensure 'net.ipv4.conf.all.log_martians' kernel parameter Equals 1 (int)............ <1 second: Collected
+-- [obj:6593911] Ensure 'net.ipv4.conf.all.log_martians' kernel parameter Equals 1 (int)............ <1 second: Collected
+-- [obj:6593962] Ensure 'net.ipv4.conf.default.log_martians' kernel parameter Equals 1 (int)........ <1 second: Collected
+-- [obj:6593963] Ensure 'net.ipv4.conf.default.log_martians' kernel parameter Equals 1 (int)........ <1 second: Collected
+-- [obj:6593961] Ensure 'net.ipv4.conf.default.log_martians' kernel parameter Equals 1 (int)........ <1 second: Collected
+-- [obj:689842] Ensure no file named /etc/sysctl.co...\.ipv4\.icmp_echo_ignore_broadcasts\s*=\s*0\s* <1 second: Collected
+-- [obj:689843] Ensurefile(s) named ^\S+\.conf$ in ...\.ipv4\.icmp_echo_ignore_broadcasts\s*=\s*0\s* <1 second: Collected
+-- [obj:689844] Ensurefile(s) named ^\S+\.conf$ in ...\.ipv4\.icmp_echo_ignore_broadcasts\s*=\s*0\s* <1 second: Collected
+-- [obj:689845] Ensurefile(s) named ^\S+\.conf$ in ...\.ipv4\.icmp_echo_ignore_broadcasts\s*=\s*0\s* <1 second: Collected
+-- [obj:689846] Ensure no file named /etc/sysctl.co...\.icmp_ignore_bogus_error_responses\s*=\s*0\s* <1 second: Collected
+-- [obj:689847] Ensurefile(s) named ^\S+\.conf$ in ...\.icmp_ignore_bogus_error_responses\s*=\s*0\s* <1 second: Collected
+-- [obj:689848] Ensurefile(s) named ^\S+\.conf$ in ...\.icmp_ignore_bogus_error_responses\s*=\s*0\s* <1 second: Collected
+-- [obj:689849] Ensurefile(s) named ^\S+\.conf$ in ...\.icmp_ignore_bogus_error_responses\s*=\s*0\s* <1 second: Collected
+-- [obj:659411] Ensure no file named /etc/sysctl.co...^\s*net\.ipv4\.conf\.all\.rp_filter\s*=\s*0\s* <1 second: Collected
+-- [obj:689850] Ensurefile(s) named ^\S+\.conf$ in ...^\s*net\.ipv4\.conf\.all\.rp_filter\s*=\s*0\s* <1 second: Collected
+-- [obj:689851] Ensurefile(s) named ^\S+\.conf$ in ...^\s*net\.ipv4\.conf\.all\.rp_filter\s*=\s*0\s* <1 second: Collected
+-- [obj:689852] Ensurefile(s) named ^\S+\.conf$ in ...^\s*net\.ipv4\.conf\.all\.rp_filter\s*=\s*0\s* <1 second: Collected
+-- [obj:6898532] Ensure 'net.ipv4.conf.default.rp_filter' kernel parameter Equals 1 (int)........... <1 second: Collected
+-- [obj:6898533] Ensure 'net.ipv4.conf.default.rp_filter' kernel parameter Equals 1 (int)........... <1 second: Collected
+-- [obj:6898531] Ensure 'net.ipv4.conf.default.rp_filter' kernel parameter Equals 1 (int)........... <1 second: Collected
+-- [obj:659420] Ensure no file named /etc/sysctl.co...n ^\s*net\.ipv4\.tcp_syncookies\s*=\s*(0|2)\s* <1 second: Collected
+-- [obj:659424] Ensurefile(s) named ^\S+\.conf$ in ...n ^\s*net\.ipv4\.tcp_syncookies\s*=\s*(0|2)\s* <1 second: Collected
+-- [obj:659429] Ensurefile(s) named ^\S+\.conf$ in ...n ^\s*net\.ipv4\.tcp_syncookies\s*=\s*(0|2)\s* <1 second: Collected
+-- [obj:689854] Ensurefile(s) named ^\S+\.conf$ in ...n ^\s*net\.ipv4\.tcp_syncookies\s*=\s*(0|2)\s* <1 second: Collected
+-- [obj:6594382] Ensure 'net.ipv6.conf.all.accept_ra' kernel parameter Equals 0 (int)............... <1 second: Collected
+-- [obj:6594383] Ensure 'net.ipv6.conf.all.accept_ra' kernel parameter Equals 0 (int)............... <1 second: Collected
+-- [obj:6594381] Ensure 'net.ipv6.conf.all.accept_ra' kernel parameter Equals 0 (int)............... <1 second: Collected
+-- [obj:6594422] Ensure 'net.ipv6.conf.default.accept_ra' kernel parameter Equals 0 (int)........... <1 second: Collected
+-- [obj:6594423] Ensure 'net.ipv6.conf.default.accept_ra' kernel parameter Equals 0 (int)........... <1 second: Collected
+-- [obj:6594421] Ensure 'net.ipv6.conf.default.accept_ra' kernel parameter Equals 0 (int)........... <1 second: Collected
+-- [obj:659445] Ensure at least one file named /boo...elopts=(\S+\s+)*ipv6\.disable=1\b\s*(\S+\s*)*$ <1 second: Collected
+-- [obj:659455] Ensure package name equals 'firewalld' is installed................................. <1 second: Collected
+-- [obj:659460] Ensure package name equals 'nftables' is installed.................................. <1 second: Collected
+-- [obj:659464] Ensure package name equals 'iptables' is installed.................................. <1 second: Collected
+-- [obj:659472] Ensure standard service 'firewalld' is enabled...................................... <1 second: Collected
+-- [obj:659475] Ensure standard service 'iptables' is enabled....................................... <1 second: Collected
+-- [obj:659480] Ensure standard service 'nftables' is enabled....................................... <1 second: Collected
+-- [obj:659486] Ensure standard service 'iptables' is disabled...................................... <1 second: Collected
+-- [obj:659489] Ensure package name equals 'firewalld' is not installed............................. <1 second: Collected
+-- [obj:659493] Ensure package name equals 'iptables' is not installed.............................. <1 second: Collected
+-- [obj:659497] Ensure standard service 'firewalld' is disabled..................................... <1 second: Collected
+-- [obj:659501] Ensure standard service 'nftables' is disabled...................................... <1 second: Collected
+-- [obj:659506] Ensure package name equals 'nftables' is not installed.............................. <1 second: Collected
+-- [obj:659510] Ensure package name equals 'firewalld' is not installed............................. <1 second: Collected
+-- [obj:659515] Ensure standard service 'firewalld' is disabled..................................... <1 second: Collected
+-- [obj:659521] Ensure at least one file named /etc...exists and matches pattern ^\s*DefaultZone=\S+ <1 second: Collected
+-- [obj:659524] Ensure package name equals 'firewalld' is not installed............................. <1 second: Collected
+-- [obj:659528] Ensure standard service 'firewalld' is disabled..................................... <1 second: Collected
+-- [obj:659509] Ensure package name equals 'nftables' is not installed.............................. <1 second: Collected
+-- [obj:659514] Ensure standard service 'nftables' is disabled...................................... <1 second: Collected
+-- [obj:659530] Ensure package name equals 'nftablles' is not installed............................. <1 second: Collected
+-- [obj:659535] Ensure standard service 'nftables' is disabled...................................... <1 second: Collected
+-- [obj:659552] Ensure at least one file named \boo...rnelopts=(\S+\s+)*ipv6\.disable=1\s*(\S+\s*)*$ <1 second: Collected
+-- [obj:659555] Ensure package name equals 'nftables' is not installed.............................. <1 second: Collected
+-- [obj:659556] Ensure standard service 'nftables' is disabled...................................... <1 second: Collected
+-- [obj:659496] Ensure package name equals 'nftables' is not installed.............................. <1 second: Collected
+-- [obj:659500] Ensure standard service 'nftables' is disabled...................................... <1 second: Collected
+-- [obj:659557] Ensure standard service 'nftables' is enabled....................................... <1 second: Collected
+-- [obj:659558] Ensure standard service 'firewalld' is enabled...................................... <1 second: Collected
+-- [obj:659559] Ensure standard service 'iptables' is enabled....................................... <1 second: Collected
+-- [obj:659560] Ensure at least one file named /etc...es.conf exists and matches pattern ^\s*include <1 second: Collected
+-- [obj:659561] Ensure package name equals 'nftables' is not installed.............................. <1 second: Collected
+-- [obj:659562] Ensure standard service 'nftables' is disabled...................................... <1 second: Collected
+-- [obj:659516] Ensure standard service 'iptables' is disabled...................................... <1 second: Collected
+-- [obj:659519] Ensure package name equals 'iptables' is not installed.............................. <1 second: Collected
+-- [obj:659538] Ensure standard service 'iptables' is disabled...................................... <1 second: Collected
+-- [obj:659540] Ensure package name equals 'iptables' is not installed.............................. <1 second: Collected
+-- [obj:659549] Linux Custom Object "Firewall Rule Exists For All Open Ports"....................... <1 second: Collected
+-- [obj:659551] Ensure standard service 'iptables' is disabled...................................... <1 second: Collected
+-- [obj:659553] Ensure package name equals 'iptables' is not installed.............................. <1 second: Collected
+-- [obj:659504] Ensure 'ip6tables -L' output Patter...hain INPUT \(policy (DROP|REJECT)\)$' (string) <1 second: Collected
+-- [obj:659508] Ensure 'ip6tables -L' output Patter...in FORWARD \(policy (DROP|REJECT)\)$' (string) <1 second: Collected
+-- [obj:659512] Ensure 'ip6tables -L' output Patter...ain OUTPUT \(policy (DROP|REJECT)\)$' (string) <1 second: Collected
+-- [obj:659517] Ensure at least one file named /boo...elopts=(\S+\s+)*ipv6\.disable=1\b\s*(\S+\s*)*$ <1 second: Collected
+-- [obj:659520] Ensure standard service 'iptables' is disabled...................................... <1 second: Collected
+-- [obj:659525] Ensure package name equals 'iptables' is not installed.............................. <1 second: Collected
+-- [obj:659532] Ensure 'ip6tables -L INPUT -v -n' o...ll\s+lo\s+\*\s+\:\:\/0\s+\:\:\/0\s*$' (string) <1 second: Collected
+-- [obj:659536] Ensure 'ip6tables -L INPUT -v -n' o...+all\s+\*\s+\*\s+\:\:1\s+\:\:\/0\s*$' (string) <1 second: Collected
+-- [obj:659539] Ensure 'ip6tables -L OUTPUT -v -n' ...ll\s+\*\s+lo\s+\:\:\/0\s+\:\:\/0\s*$' (string) <1 second: Collected
+-- [obj:659544] Ensure at least one file named /boo...elopts=(\S+\s+)*ipv6\.disable=1\b\s*(\S+\s*)*$ <1 second: Collected
+-- [obj:659547] Ensure standard service 'iptables' is disabled...................................... <1 second: Collected
+-- [obj:659550] Ensure package name equals 'iptables' is not installed.............................. <1 second: Collected
+-- [obj:659440] Ensure package name equals 'rsyslog' is installed................................... <1 second: Collected
+-- [obj:659400] Ensure standard service 'rsyslog' is enabled........................................ <1 second: Collected
+-- [obj:659410] Ensure at least one file named /etc...s*\$FileCreateMode\s+0[6420][40]0\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659417] Ensure at least one file(s) named ....s*\$FileCreateMode\s+0[6420][40]0\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659422] Ensure at least one file named /etc...conf exists and matches pattern ^\s*\*\.\*\s+@ <1 second: Collected
+-- [obj:659427] Ensure at least one file(s) named ....g.d/ exists and matches pattern ^\s*\*\.\*\s+@ <1 second: Collected
+-- [obj:659412] Ensure at least one file named /etc...rn ^\s*(?i)ForwardToSyslog\s*=\s*yes(\s+#.*)*$ <1 second: Collected
+-- [obj:659416] Ensure at least one file named /etc...s pattern ^\s*(?i)Compress\s*=\s*yes(\s+#.*)*$ <1 second: Collected
+-- [obj:659421] Ensure at least one file named /etc...ern ^\s*(?i)Storage\s*=\s*persistent(\s+#.*)*$ <1 second: Collected
+-- [obj:659163] Ensure any file(s) named .* in /var...exists and does not have permissions ----wxrwx <1 second: Collected
+-- [obj:659257] Ensure standard service 'crond' is enabled.......................................... <1 second: Collected
+-- [obj:659260] Ensure at least one file named /etc...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
+-- [obj:659265] Ensure at least one file named /etc...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
+-- [obj:659272] Ensure at least one file named /etc...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
+-- [obj:659278] Ensure at least one file named /etc...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
+-- [obj:659283] Ensure at least one file named /etc...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
+-- [obj:659289] Ensure at least one file named /etc...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
+-- [obj:659297] Ensure at least one file named /etc...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
+-- [obj:659301] <p>Ensure{ if $artifact.existence =...test.gid != '' } and is owned by { $test.uid } <1 second: Collected
+-- [obj:659304] <p>Ensure{ if $artifact.existence =...test.gid != '' } and is owned by { $test.uid } <1 second: Collected
+-- [obj:659307] <p>Ensure{ if $artifact.existence =...test.gid != '' } and is owned by { $test.uid } <1 second: Collected
+-- [obj:659319] Ensure at least one file named /etc...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
+-- [obj:732030] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:724268] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:659394] Ensure any file(s) named ^(ssh\_hos...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
+-- [obj:732032] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:659402] Ensure all {else} no file(s) named ...by 0:0 and does not have permissions ----wx-wx <1 second: Collected
+-- [obj:732033] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689857] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689859] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689860] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689861] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689862] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689863] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689864] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689865] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689866] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689867] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689868] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689872] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689874] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:689875] Ensure no file named /etc/sysconfig...^\s*(CRYPTO_POLICY|[Cc]rypto_[Pp]olicy)\s*=.*$ <1 second: Collected
+-- [obj:724305] Ensure package name equals 'openssh-server' is not installed........................ <1 second: Collected
+-- [obj:659340] Ensure 'authselect current | grep '... Match '^/s*Profile\s+ID:\s+custom\/' (string) <1 second: Collected
+-- [obj:724309] Ensure at least one file named /etc...d matches pattern ^\s*custom\/\S+\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659335] Ensure at least one file named /etc...f exists and matches pattern ^\s*with-faillock <1 second: Collected
+-- [obj:659337] Ensure at least one file named /etc...+(\S+\s+)*retry=[1-3]\s*(\s+\S+\s*)*(\s+#.*)*$ <1 second: Collected
+-- [obj:659339] Ensure at least one file named /etc...+(\S+\s+)*retry=[1-3]\s*(\s+\S+\s*)*(\s+#.*)*$ <1 second: Collected
+-- [obj:724312] Ensure at least one file named /etc...*(1[4-9]|[2-9][0-9]|[1-9][0-9][0-9])(\s+#.*)*$ <1 second: Collected
+-- [obj:659306] Ensure at least one file named /etc...rn ^\s*auth\s+required\s+.*\s+deny=[1-5]\s*.*$ <1 second: Collected
+-- [obj:659311] Ensure at least one file named /etc..._time=(9[0-9][0-9]|[1-9][0-9][0-9][0-9])\s*.*$ <1 second: Collected
+-- [obj:659314] Ensure at least one file named /etc...rn ^\s*auth\s+required\s+.*\s+deny=[1-5]\s*.*$ <1 second: Collected
+-- [obj:659318] Ensure at least one file named /etc..._time=(9[0-9][0-9]|[1-9][0-9][0-9][0-9])\s*.*$ <1 second: Collected
+-- [obj:659321] Ensure at least one file named /etc...([5-9]|[1-4][0-9])[0-9]*(\s+\S+\s*)*(\s+#.*)*$ <1 second: Collected
+-- [obj:659330] Ensure at least one file named /etc...rd\s+sufficient\s+pam_unix.so\s+.*sha512\s*.*$ <1 second: Collected
+-- [obj:659333] Ensure at least one file named /etc...rd\s+sufficient\s+pam_unix.so\s+.*sha512\s*.*$ <1 second: Collected
+-- [obj:659451] Ensure at least one file named /etc...0-9]|[1-2][0-9][0-9]|[1-9][0-9]?)\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659457] Linux Custom Object "Ensure no user...ssword have password expiration over 365 days" <1 second: Collected
+-- [obj:659463] Ensure at least one file named /etc...SS_MIN_DAYS\s+([789]|[1-9][0-9]+)\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659467] Linux Custom Object "Ensure no user...ord have password change minimum under 7 days" <1 second: Collected
+-- [obj:659474] Ensure at least one file named /etc...SS_WARN_AGE\s+([789]|[1-9][0-9]+)\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659479] Linux Custom Object "Ensure no user...have password expiration warning under 7 days" <1 second: Collected
+-- [obj:659485] Ensure at least one file named /etc...CTIVE\s*=\s*(30|[1-2][0-9]|[1-9])\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659490] Linux Custom Object "Ensure no user...sword have password inactivation over 30 days" <1 second: Collected
+-- [obj:7243153] Linux Custom Object "Ensure all us...assword have password change date in the past" <1 second: Collected
+-- [obj:659309] Linux Custom Object "System Accounts Disabled"...................................... <1 second: Collected
+-- [obj:659342] Ensure at least one file named /etc...[1-8][0-9][0-9]|[1-9][0-9]|[1-9])\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659343] Ensure no file named /etc/bashrc ex...[1-9]|9[1-9][0-9]|[1-9][0-9]{3,})\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659348] Ensure at least one file named /etc...[1-8][0-9][0-9]|[1-9][0-9]|[1-9])\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659355] Ensure at least one file named /etc...[1-9]|9[1-9][0-9]|[1-9][0-9]{3,})\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659313] Linux Custom Object "Default Group Set For root User"............................... <1 second: Collected
+-- [obj:659315] Ensure at least one file named /etc...ern ^\s*umask\s+[01234567][2367]7\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659320] Ensure no file named /etc/bashrc ex...67](0[7654321]|[7654321][654321])\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659326] Ensure at least one file named /etc...67](0[7654321]|[7654321][654321])\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659329] Ensure at least one file(s) named ....ern ^\s*umask\s+[01234567][2367]7\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659322] Ensure at least one file named /etc...ern ^\s*umask\s+[01234567][2367]7\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659334] Ensurefile(s) named .*\.sh in /etc/...67](0[7654321]|[7654321][654321])\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659137] Ensure at least one file named /etc...el.so(\s+\S+)*\s+use_uid(\s+\S+)*\s*(\s+#.*)?$ <1 second: Collected
+-- [obj:659244] Ensure at least one file named /etc...ot have permissions --x-wx-wx SUID SGID sticky <1 second: Collected
+-- [obj:659250] Ensure at least one file named /etc...ot have permissions --x-wxrwx SUID SGID sticky <1 second: Collected
+-- [obj:659255] Ensure at least one file named /etc...ot have permissions --x-wx-wx SUID SGID sticky <1 second: Collected
+-- [obj:659261] Ensure at least one file named /etc...ot have permissions --x-wxrwx SUID SGID sticky <1 second: Collected
+-- [obj:659267] Ensure at least one file named /etc...ot have permissions --x-wx-wx SUID SGID sticky <1 second: Collected
+-- [obj:659273] Ensure at least one file named /etc...ot have permissions --x-wxrwx SUID SGID sticky <1 second: Collected
+-- [obj:659279] Ensure at least one file named /etc...ot have permissions --x-wx-wx SUID SGID sticky <1 second: Collected
+-- [obj:659285] Ensure at least one file named /etc...ot have permissions --x-wxrwx SUID SGID sticky <1 second: Collected
+-- [obj:659248] Ensure usernames pattern match .+ h...w parameter password Pattern Match .+ (string) <1 second: Collected
+-- [obj:659253] Ensure at least one file named /etc/passwd exists and does not match pattern ^\+:... <1 second: Collected
+-- [obj:659256] Ensure at least one file named /etc/shadow exists and does not match pattern ^\+:... <1 second: Collected
+-- [obj:659258] Ensure at least one file named /etc/group exists and does not match pattern ^\+:.... <1 second: Collected
+-- [obj:659263] Ensure at least one file named /etc...does not match pattern ^(?!root:)[^:]*:[^:]*:0 <1 second: Collected
+-- [obj:659280] Linux Custom Object "No User Home Directories Have Permissions ----w-rwx"........... <1 second: Collected
+-- [obj:659286] Linux Custom Object "No User Dot Files Have Permissions ----w--w-".................. <1 second: Collected
+-- [obj:659287] Linux Custom Object "No User Home Directories Contain .forward Files"............... <1 second: Collected
+-- [obj:659292] Linux Custom Object "No User Home Directories Contain .netrc Files"................. <1 second: Collected
+-- [obj:659295] Linux Custom Object "No User .netrc Files Have Permissions ---rwxrwx"............... <1 second: Collected
+-- [obj:659300] Linux Custom Object "No User Home Directories Contain .rhost Files"................. <1 second: Collected
+-- [obj:659303] Linux Custom Object "All Groups In /etc/passwd Exist In /etc/group"................. <1 second: Collected
+-- [obj:659308] Linux Custom Object "Check For Duplicate UIDs"...................................... <1 second: Collected
+-- [obj:659312] Linux Custom Object "Check For Duplicate GIDs"...................................... <1 second: Collected
+-- [obj:659317] Linux Custom Object "Check For Duplicate User Names"................................ <1 second: Collected
+-- [obj:659323] Linux Custom Object "Check For Duplicate Group Names"............................... <1 second: Collected
+-- [obj:659328] Linux Custom Object "Shadow Group is Empty"......................................... <1 second: Collected
+-- [obj:659275] Linux Custom Object "All User Home Directories Exist"............................... <1 second: Collected
+
+- System Characteristics Collection: 7 seconds
+
+- Evaluating Definitions
+01/286: [def:659432] Ensure mounting of cramfs filesystems is disabled.............................. <1 second: true
+02/286: [def:659435] Ensure mounting of cramfs filesystems is disabled.............................. <1 second: true
+03/286: [def:659444] Ensure mounting of squashfs filesystems is disabled............................ <1 second: true
+04/286: [def:659446] Ensure mounting of squashfs filesystems is disabled............................ <1 second: true
+05/286: [def:659452] Ensure mounting of udf filesystems is disabled................................. <1 second: true
+06/286: [def:659456] Ensure mounting of udf filesystems is disabled................................. <1 second: true
+07/286: [def:659226] Ensure /tmp is configured...................................................... <1 second: true
+08/286: [def:659168] Ensure nodev option set on /tmp partition...................................... <1 second: true
+09/286: [def:659172] Ensure nosuid option set on /tmp partition..................................... <1 second: true
+10/286: [def:659176] Ensure noexec option set on /tmp partition..................................... <1 second: true
+11/286: [def:659184] Ensure nodev option set on /var/tmp partition.................................. <1 second: true
+12/286: [def:659188] Ensure nosuid option set on /var/tmp partition................................. <1 second: true
+13/286: [def:659191] Ensure noexec option set on /var/tmp partition................................. <1 second: true
+14/286: [def:659203] Ensure nodev option set on /home partition..................................... <1 second: true
+15/286: [def:659207] Ensure nodev option set on /dev/shm partition.................................. <1 second: true
+16/286: [def:659211] Ensure nosuid option set on /dev/shm partition................................. <1 second: true
+17/286: [def:659214] Ensure noexec option set on /dev/shm partition................................. <1 second: true
+18/286: [def:659224] Disable Automounting........................................................... <1 second: true
+19/286: [def:689827] Disable USB Storage............................................................ <1 second: true
+20/286: [def:689828] Disable USB Storage............................................................ <1 second: true
+21/286: [def:689829] Disable the rhnsd Daemon....................................................... <1 second: true
+22/286: [def:659186] Ensure gpgcheck is globally activated.......................................... <1 second: true
+23/286: [def:659187] Ensure gpgcheck is globally activated.......................................... <1 second: true
+24/286: [def:659190] Ensure gpgcheck is globally activated.......................................... <1 second: true
+25/286: [def:659238] Ensure sudo is installed....................................................... <1 second: true
+26/286: [def:659242] Ensure sudo commands use pty................................................... <1 second: false
+27/286: [def:659245] Ensure sudo commands use pty................................................... <1 second: false
+28/286: [def:659249] Ensure sudo log file exists.................................................... <1 second: true
+29/286: [def:659252] Ensure sudo log file exists.................................................... <1 second: false
+30/286: [def:677482] Ensure AIDE is installed....................................................... <1 second: true
+31/286: [def:659198] Ensure filesystem integrity is regularly checked............................... <1 second: false
+32/286: [def:659202] Ensure filesystem integrity is regularly checked............................... <1 second: true
+33/286: [def:659204] Ensure filesystem integrity is regularly checked............................... <1 second: false
+34/286: [def:659208] Ensure filesystem integrity is regularly checked............................... <1 second: false
+35/286: [def:659210] Ensure filesystem integrity is regularly checked............................... <1 second: false
+36/286: [def:659213] Ensure filesystem integrity is regularly checked............................... <1 second: false
+37/286: [def:659216] Ensure filesystem integrity is regularly checked............................... <1 second: false
+38/286: [def:659218] Ensure filesystem integrity is regularly checked............................... <1 second: false
+39/286: [def:659222] Ensure filesystem integrity is regularly checked............................... <1 second: false
+40/286: [def:659217] Ensure permissions on bootloader config are configured......................... <1 second: true
+41/286: [def:659221] Ensure permissions on bootloader config are configured......................... <1 second: true
+42/286: [def:659225] Ensure bootloader password is set.............................................. <1 second: false
+43/286: [def:659230] Ensure authentication required for single user mode............................ <1 second: true
+44/286: [def:659231] Ensure authentication required for single user mode............................ <1 second: true
+45/286: [def:659227] Ensure core dumps are restricted............................................... <1 second: true
+46/286: [def:659229] Ensure core dumps are restricted............................................... <1 second: false
+47/286: [def:689830] Ensure core dumps are restricted............................................... <1 second: true
+48/286: [def:689831] Ensure core dumps are restricted............................................... <1 second: false
+49/286: [def:689832] Ensure address space layout randomization (ASLR) is enabled.................... <1 second: true
+50/286: [def:689833] Ensure address space layout randomization (ASLR) is enabled.................... <1 second: true
+51/286: [def:689834] Ensure address space layout randomization (ASLR) is enabled.................... <1 second: true
+52/286: [def:689835] Ensure address space layout randomization (ASLR) is enabled.................... <1 second: true
+53/286: [def:689840] Ensure local login warning banner is configured properly....................... <1 second: true
+54/286: [def:689841] Ensure remote login warning banner is configured properly...................... <1 second: true
+55/286: [def:659476] Ensure permissions on /etc/motd are configured................................. <1 second: true
+56/286: [def:724317] Ensure permissions on /etc/motd are configured................................. <1 second: false
+57/286: [def:659484] Ensure permissions on /etc/issue are configured................................ <1 second: true
+58/286: [def:659495] Ensure permissions on /etc/issue.net are configured............................ <1 second: true
+59/286: [def:659233] Ensure GDM login banner is configured.......................................... <1 second: false
+60/286: [def:659236] Ensure GDM login banner is configured.......................................... <1 second: false
+61/286: [def:659240] Ensure GDM login banner is configured.......................................... <1 second: false
+62/286: [def:659243] Ensure GDM login banner is configured.......................................... <1 second: true
+63/286: [def:659135] Ensure system-wide crypto policy is not legacy................................. <1 second: true
+64/286: [def:659139] Ensure xinetd is not installed................................................. <1 second: true
+65/286: [def:659426] Ensure time synchronization is in use.......................................... <1 second: true
+66/286: [def:659430] Ensure chrony is configured.................................................... <1 second: true
+67/286: [def:659434] Ensure chrony is configured.................................................... <1 second: true
+68/286: [def:659437] Ensure chrony is configured.................................................... <1 second: false
+69/286: [def:659140] Ensure X Window System is not installed........................................ <1 second: false
+70/286: [def:659142] Ensure X Window System is not installed........................................ <1 second: true
+71/286: [def:659174] Ensure rsync service is not enabled............................................ <1 second: true
+72/286: [def:659144] Ensure Avahi Server is not enabled............................................. <1 second: true
+73/286: [def:659167] Ensure SNMP Server is not enabled.............................................. <1 second: true
+74/286: [def:659166] Ensure HTTP Proxy Server is not enabled........................................ <1 second: true
+75/286: [def:659164] Ensure Samba is not enabled.................................................... <1 second: true
+76/286: [def:659161] Ensure IMAP and POP3 server is not enabled..................................... <1 second: true
+77/286: [def:659159] Ensure HTTP server is not enabled.............................................. <1 second: true
+78/286: [def:659157] Ensure FTP Server is not enabled............................................... <1 second: true
+79/286: [def:659155] Ensure DNS Server is not enabled............................................... <1 second: true
+80/286: [def:659153] Ensure NFS is not enabled...................................................... <1 second: true
+81/286: [def:659179] Ensure  RPC is not enabled..................................................... <1 second: true
+82/286: [def:659151] Ensure LDAP server is not enabled.............................................. <1 second: true
+83/286: [def:659148] Ensure DHCP Server is not enabled.............................................. <1 second: true
+84/286: [def:659146] Ensure CUPS is not enabled..................................................... <1 second: true
+85/286: [def:659177] Ensure NIS Server is not enabled............................................... <1 second: true
+86/286: [def:659170] Ensure mail transfer agent is configured for local-only mode................... <1 second: true
+87/286: [def:659141] Ensure NIS Client is not installed............................................. <1 second: true
+88/286: [def:659143] Ensure telnet client is not installed.......................................... <1 second: true
+89/286: [def:659145] Ensure LDAP client is not installed............................................ <1 second: true
+90/286: [def:659350] Ensure IP forwarding is disabled............................................... <1 second: true
+91/286: [def:659354] Ensure IP forwarding is disabled............................................... <1 second: true
+92/286: [def:659360] Ensure IP forwarding is disabled............................................... <1 second: true
+93/286: [def:659364] Ensure IP forwarding is disabled............................................... <1 second: true
+94/286: [def:659376] Ensure IP forwarding is disabled............................................... <1 second: true
+95/286: [def:659380] Ensure IP forwarding is disabled............................................... <1 second: true
+96/286: [def:659387] Ensure IP forwarding is disabled............................................... <1 second: true
+97/286: [def:659393] Ensure IP forwarding is disabled............................................... <1 second: true
+98/286: [def:659401] Ensure packet redirect sending is disabled..................................... <1 second: true
+99/286: [def:659406] Ensure packet redirect sending is disabled..................................... <1 second: true
+100/286: [def:659347] Ensure source routed packets are not accepted................................. <1 second: true
+101/286: [def:659351] Ensure source routed packets are not accepted................................. <1 second: true
+102/286: [def:659356] Ensure source routed packets are not accepted................................. <1 second: false
+103/286: [def:659359] Ensure source routed packets are not accepted................................. <1 second: false
+104/286: [def:659365] Ensure ICMP redirects are not accepted........................................ <1 second: true
+105/286: [def:659368] Ensure ICMP redirects are not accepted........................................ <1 second: true
+106/286: [def:659372] Ensure ICMP redirects are not accepted........................................ <1 second: true
+107/286: [def:659377] Ensure ICMP redirects are not accepted........................................ <1 second: true
+108/286: [def:659382] Ensure secure ICMP redirects are not accepted................................. <1 second: true
+109/286: [def:659386] Ensure secure ICMP redirects are not accepted................................. <1 second: true
+110/286: [def:659391] Ensure suspicious packets are logged.......................................... <1 second: true
+111/286: [def:659396] Ensure suspicious packets are logged.......................................... <1 second: true
+112/286: [def:689842] Ensure broadcast ICMP requests are ignored.................................... <1 second: true
+113/286: [def:689843] Ensure broadcast ICMP requests are ignored.................................... <1 second: true
+114/286: [def:689844] Ensure broadcast ICMP requests are ignored.................................... <1 second: true
+115/286: [def:689845] Ensure broadcast ICMP requests are ignored.................................... <1 second: true
+116/286: [def:689846] Ensure bogus ICMP responses are ignored....................................... <1 second: true
+117/286: [def:689847] Ensure bogus ICMP responses are ignored....................................... <1 second: true
+118/286: [def:689848] Ensure bogus ICMP responses are ignored....................................... <1 second: true
+119/286: [def:689849] Ensure bogus ICMP responses are ignored....................................... <1 second: true
+120/286: [def:659411] Ensure Reverse Path Filtering is enabled...................................... <1 second: true
+121/286: [def:689850] Ensure Reverse Path Filtering is enabled...................................... <1 second: true
+122/286: [def:689851] Ensure Reverse Path Filtering is enabled...................................... <1 second: true
+123/286: [def:689852] Ensure Reverse Path Filtering is enabled...................................... <1 second: true
+124/286: [def:689853] Ensure Reverse Path Filtering is enabled...................................... <1 second: true
+125/286: [def:659420] Ensure TCP SYN Cookies is enabled............................................. <1 second: true
+126/286: [def:659424] Ensure TCP SYN Cookies is enabled............................................. <1 second: true
+127/286: [def:659429] Ensure TCP SYN Cookies is enabled............................................. <1 second: true
+128/286: [def:689854] Ensure TCP SYN Cookies is enabled............................................. <1 second: true
+129/286: [def:659438] Ensure IPv6 router advertisements are not accepted............................ <1 second: true
+130/286: [def:659442] Ensure IPv6 router advertisements are not accepted............................ <1 second: true
+131/286: [def:659445] Ensure IPv6 router advertisements are not accepted............................ <1 second: false
+132/286: [def:659455] Ensure a Firewall package is installed........................................ <1 second: true
+133/286: [def:659460] Ensure a Firewall package is installed........................................ <1 second: true
+134/286: [def:659464] Ensure a Firewall package is installed........................................ <1 second: true
+135/286: [def:659472] Ensure firewalld service is enabled and running............................... <1 second: true
+136/286: [def:659475] Ensure firewalld service is enabled and running............................... <1 second: false
+137/286: [def:659480] Ensure firewalld service is enabled and running............................... <1 second: false
+138/286: [def:659486] Ensure iptables is not enabled................................................ <1 second: true
+139/286: [def:659489] Ensure iptables is not enabled................................................ <1 second: false
+140/286: [def:659493] Ensure iptables is not enabled................................................ <1 second: false
+141/286: [def:659497] Ensure iptables is not enabled................................................ <1 second: false
+142/286: [def:659501] Ensure nftables is not enabled................................................ <1 second: true
+143/286: [def:659506] Ensure nftables is not enabled................................................ <1 second: false
+144/286: [def:659510] Ensure nftables is not enabled................................................ <1 second: false
+145/286: [def:659515] Ensure nftables is not enabled................................................ <1 second: false
+146/286: [def:659521] Ensure default zone is set.................................................... <1 second: true
+147/286: [def:659524] Ensure default zone is set.................................................... <1 second: false
+148/286: [def:659528] Ensure default zone is set.................................................... <1 second: false
+149/286: [def:659509] Ensure a table exists......................................................... <1 second: false
+150/286: [def:659514] Ensure a table exists......................................................... <1 second: true
+151/286: [def:659530] Ensure base chains exist...................................................... <1 second: true
+152/286: [def:659535] Ensure base chains exist...................................................... <1 second: true
+153/286: [def:659552] Ensure loopback traffic is configured......................................... <1 second: false
+154/286: [def:659555] Ensure loopback traffic is configured......................................... <1 second: false
+155/286: [def:659556] Ensure loopback traffic is configured......................................... <1 second: true
+156/286: [def:659496] Ensure default deny firewall policy........................................... <1 second: false
+157/286: [def:659500] Ensure default deny firewall policy........................................... <1 second: true
+158/286: [def:659557] Ensure nftables service is enabled............................................ <1 second: false
+159/286: [def:659558] Ensure nftables service is enabled............................................ <1 second: true
+160/286: [def:659559] Ensure nftables service is enabled............................................ <1 second: false
+161/286: [def:659560] Ensure nftables rules are permanent........................................... <1 second: false
+162/286: [def:659561] Ensure nftables rules are permanent........................................... <1 second: false
+163/286: [def:659562] Ensure nftables rules are permanent........................................... <1 second: true
+164/286: [def:659516] Ensure default deny firewall policy........................................... <1 second: true
+165/286: [def:659519] Ensure default deny firewall policy........................................... <1 second: false
+166/286: [def:659538] Ensure loopback traffic is configured......................................... <1 second: true
+167/286: [def:659540] Ensure loopback traffic is configured......................................... <1 second: false
+168/286: [def:659549] Ensure firewall rules exist for all open ports................................ <1 second: false
+169/286: [def:659551] Ensure firewall rules exist for all open ports................................ <1 second: true
+170/286: [def:659553] Ensure firewall rules exist for all open ports................................ <1 second: false
+171/286: [def:659504] Ensure IPv6 default deny firewall policy...................................... <1 second: false
+172/286: [def:659508] Ensure IPv6 default deny firewall policy...................................... <1 second: false
+173/286: [def:659512] Ensure IPv6 default deny firewall policy...................................... <1 second: false
+174/286: [def:659517] Ensure IPv6 default deny firewall policy...................................... <1 second: false
+175/286: [def:659520] Ensure IPv6 default deny firewall policy...................................... <1 second: true
+176/286: [def:659525] Ensure IPv6 default deny firewall policy...................................... <1 second: false
+177/286: [def:659532] Ensure IPv6 loopback traffic is configured.................................... <1 second: false
+178/286: [def:659536] Ensure IPv6 loopback traffic is configured.................................... <1 second: false
+179/286: [def:659539] Ensure IPv6 loopback traffic is configured.................................... <1 second: false
+180/286: [def:659544] Ensure IPv6 loopback traffic is configured.................................... <1 second: false
+181/286: [def:659547] Ensure IPv6 loopback traffic is configured.................................... <1 second: true
+182/286: [def:659550] Ensure IPv6 loopback traffic is configured.................................... <1 second: false
+183/286: [def:659440] Ensure rsyslog is installed................................................... <1 second: true
+184/286: [def:659400] Ensure rsyslog Service is enabled............................................. <1 second: true
+185/286: [def:659410] Ensure rsyslog default file permissions configured............................ <1 second: true
+186/286: [def:659417] Ensure rsyslog default file permissions configured............................ <1 second: false
+187/286: [def:659422] Ensure rsyslog is configured to send logs to a remote log host................ <1 second: true
+188/286: [def:659427] Ensure rsyslog is configured to send logs to a remote log host................ <1 second: false
+189/286: [def:659412] Ensure journald is configured to send logs to rsyslog......................... <1 second: true
+190/286: [def:659416] Ensure journald is configured to compress large log files..................... <1 second: true
+191/286: [def:659421] Ensure journald is configured to write logfiles to persistent disk............ <1 second: true
+192/286: [def:659163] Ensure permissions on all logfiles are configured............................. <1 second: true
+193/286: [def:659257] Ensure cron daemon is enabled................................................. <1 second: true
+194/286: [def:659260] Ensure permissions on /etc/crontab are configured............................. <1 second: true
+195/286: [def:659265] Ensure permissions on /etc/cron.hourly are configured......................... <1 second: true
+196/286: [def:659272] Ensure permissions on /etc/cron.daily are configured.......................... <1 second: true
+197/286: [def:659278] Ensure permissions on /etc/cron.weekly are configured......................... <1 second: true
+198/286: [def:659283] Ensure permissions on /etc/cron.monthly are configured........................ <1 second: true
+199/286: [def:659289] Ensure permissions on /etc/cron.d are configured.............................. <1 second: true
+200/286: [def:659297] Ensure at/cron is restricted to authorized users.............................. <1 second: true
+201/286: [def:659301] Ensure at/cron is restricted to authorized users.............................. <1 second: true
+202/286: [def:659304] Ensure at/cron is restricted to authorized users.............................. <1 second: true
+203/286: [def:659307] Ensure at/cron is restricted to authorized users.............................. <1 second: true
+204/286: [def:659319] Ensure permissions on /etc/ssh/sshd_config are configured..................... <1 second: true
+205/286: [def:732030] Ensure permissions on /etc/ssh/sshd_config are configured..................... <1 second: false
+206/286: [def:724268] Ensure SSH access is limited.................................................. <1 second: false
+207/286: [def:659394] Ensure permissions on SSH private host key files are configured............... <1 second: true
+208/286: [def:732032] Ensure permissions on SSH private host key files are configured............... <1 second: false
+209/286: [def:659402] Ensure permissions on SSH public host key files are configured................ <1 second: true
+210/286: [def:732033] Ensure permissions on SSH public host key files are configured................ <1 second: false
+211/286: [def:689857] Ensure SSH LogLevel is appropriate............................................ <1 second: false
+212/286: [def:689859] Ensure SSH MaxAuthTries is set to 4 or less................................... <1 second: false
+213/286: [def:689860] Ensure SSH IgnoreRhosts is enabled............................................ <1 second: false
+214/286: [def:689861] Ensure SSH HostbasedAuthentication is disabled................................ <1 second: false
+215/286: [def:689862] Ensure SSH root login is disabled............................................. <1 second: false
+216/286: [def:689863] Ensure SSH PermitEmptyPasswords is disabled................................... <1 second: false
+217/286: [def:689864] Ensure SSH PermitUserEnvironment is disabled.................................. <1 second: false
+218/286: [def:689865] Ensure SSH Idle Timeout Interval is configured................................ <1 second: false
+219/286: [def:689866] Ensure SSH LoginGraceTime is set to one minute or less........................ <1 second: false
+220/286: [def:689867] Ensure SSH warning banner is configured....................................... <1 second: false
+221/286: [def:689868] Ensure SSH PAM is enabled..................................................... <1 second: false
+222/286: [def:689872] Ensure SSH MaxStartups is configured.......................................... <1 second: false
+223/286: [def:689874] Ensure SSH MaxSessions is set to 4 or less.................................... <1 second: false
+224/286: [def:689875] Ensure system-wide crypto policy is not over-ridden........................... <1 second: true
+225/286: [def:724305] Ensure system-wide crypto policy is not over-ridden........................... <1 second: false
+226/286: [def:659340] Create custom authselect profile.............................................. <1 second: true
+227/286: [def:724309] Select authselect profile..................................................... <1 second: true
+228/286: [def:659335] Ensure authselect includes with-faillock...................................... <1 second: true
+229/286: [def:659337] Ensure password creation requirements are configured.......................... <1 second: true
+230/286: [def:659339] Ensure password creation requirements are configured.......................... <1 second: true
+231/286: [def:724312] Ensure password creation requirements are configured.......................... <1 second: true
+232/286: [def:659306] Ensure lockout for failed password attempts is configured..................... <1 second: true
+233/286: [def:659311] Ensure lockout for failed password attempts is configured..................... <1 second: true
+234/286: [def:659314] Ensure lockout for failed password attempts is configured..................... <1 second: true
+235/286: [def:659318] Ensure lockout for failed password attempts is configured..................... <1 second: true
+236/286: [def:659321] Ensure password reuse is limited.............................................. <1 second: true
+237/286: [def:659330] Ensure password hashing algorithm is SHA-512.................................. <1 second: true
+238/286: [def:659333] Ensure password hashing algorithm is SHA-512.................................. <1 second: true
+239/286: [def:659451] Ensure password expiration is 365 days or less................................ <1 second: true
+240/286: [def:659457] Ensure password expiration is 365 days or less................................ <1 second: true
+241/286: [def:659463] Ensure minimum days between password changes is 7 or more..................... <1 second: true
+242/286: [def:659467] Ensure minimum days between password changes is 7 or more..................... <1 second: true
+243/286: [def:659474] Ensure password expiration warning days is 7 or more.......................... <1 second: true
+244/286: [def:659479] Ensure password expiration warning days is 7 or more.......................... <1 second: true
+245/286: [def:659485] Ensure inactive password lock is 30 days or less.............................. <1 second: true
+246/286: [def:659490] Ensure inactive password lock is 30 days or less.............................. <1 second: true
+247/286: [def:724315] Ensure all users last password change date is in the past..................... <1 second: true
+248/286: [def:659309] Ensure system accounts are secured............................................ <1 second: false
+249/286: [def:659342] Ensure default user shell timeout is 900 seconds or less...................... <1 second: false
+250/286: [def:659343] Ensure default user shell timeout is 900 seconds or less...................... <1 second: true
+251/286: [def:659348] Ensure default user shell timeout is 900 seconds or less...................... <1 second: false
+252/286: [def:659355] Ensure default user shell timeout is 900 seconds or less...................... <1 second: true
+253/286: [def:659313] Ensure default group for the root account is GID 0............................ <1 second: true
+254/286: [def:659315] Ensure default user umask is 027 or more restrictive.......................... <1 second: true
+255/286: [def:659320] Ensure default user umask is 027 or more restrictive.......................... <1 second: false
+256/286: [def:659326] Ensure default user umask is 027 or more restrictive.......................... <1 second: false
+257/286: [def:659329] Ensure default user umask is 027 or more restrictive.......................... <1 second: false
+258/286: [def:659322] Ensure default user umask is 027 or more restrictive.......................... <1 second: true
+259/286: [def:659334] Ensure default user umask is 027 or more restrictive.......................... <1 second: true
+260/286: [def:659137] Ensure access to the su command is restricted................................. <1 second: true
+261/286: [def:659244] Ensure permissions on /etc/passwd are configured.............................. <1 second: true
+262/286: [def:659250] Ensure permissions on /etc/shadow are configured.............................. <1 second: true
+263/286: [def:659255] Ensure permissions on /etc/group are configured............................... <1 second: true
+264/286: [def:659261] Ensure permissions on /etc/gshadow are configured............................. <1 second: true
+265/286: [def:659267] Ensure permissions on /etc/passwd- are configured............................. <1 second: true
+266/286: [def:659273] Ensure permissions on /etc/shadow- are configured............................. <1 second: true
+267/286: [def:659279] Ensure permissions on /etc/group- are configured.............................. <1 second: true
+268/286: [def:659285] Ensure permissions on /etc/gshadow- are configured............................ <1 second: true
+269/286: [def:659248] Ensure password fields are not empty.......................................... <1 second: true
+270/286: [def:659253] Ensure no legacy "+" entries exist in /etc/passwd............................. <1 second: true
+271/286: [def:659256] Ensure no legacy "+" entries exist in /etc/shadow............................. <1 second: true
+272/286: [def:659258] Ensure no legacy "+" entries exist in /etc/group.............................. <1 second: true
+273/286: [def:659263] Ensure root is the only UID 0 account......................................... <1 second: true
+274/286: [def:659280] Ensure users' home directories permissions are 750 or more restrictive........ <1 second: true
+275/286: [def:659286] Ensure users' dot files are not group or world writable....................... <1 second: true
+276/286: [def:659287] Ensure no users have .forward files........................................... <1 second: true
+277/286: [def:659292] Ensure no users have .netrc files............................................. <1 second: true
+278/286: [def:659295] Ensure users' .netrc Files are not group or world accessible.................. <1 second: true
+279/286: [def:659300] Ensure no users have .rhosts files............................................ <1 second: true
+280/286: [def:659303] Ensure all groups in /etc/passwd exist in /etc/group.......................... <1 second: true
+281/286: [def:659308] Ensure no duplicate UIDs exist................................................ <1 second: true
+282/286: [def:659312] Ensure no duplicate GIDs exist................................................ <1 second: true
+283/286: [def:659317] Ensure no duplicate user names exist.......................................... <1 second: true
+284/286: [def:659323] Ensure no duplicate group names exist......................................... <1 second: true
+285/286: [def:659328] Ensure shadow group is empty.................................................. <1 second: true
+286/286: [def:659275] Ensure all users' home directories exist...................................... <1 second: true
+- Generating OVAL Results
+- Resolving Values.................................................................................. <1 second: Done
+
+- Collecting System Characteristics
+
+- System Characteristics Collection: <1 second
+
+- Evaluating Definitions
+- Generating OVAL Results
+OVAL Definitions assessment complete.
+
+Starting assessment of SCE Components:
+- /var/tmp/cis/Assessor-CLI/sce/world_writable_dirs_sticky.sh....................................... 1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/wbmotd.sh........................................................... <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/wbissue.sh.......................................................... <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/wbissue.net.sh...................................................... <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/yum_no_security_updates.sh.......................................... 5 seconds: fail
+- /var/tmp/cis/Assessor-CLI/sce/nft_tables.sh....................................................... <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/nft_ruleset.sh...................................................... <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/nft_ruleset.sh...................................................... <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/nft_ruleset.sh...................................................... <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/nft_ruleset_basechain.sh............................................ <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/nft_ruleset_basechain.sh............................................ <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/nft_ruleset_basechain.sh............................................ <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/nft_ruleset_drop.sh................................................. <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/nft_ruleset_drop.sh................................................. <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/nft_ruleset_drop.sh................................................. <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/iptables_chk.sh..................................................... <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/iptables_chk.sh..................................................... <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/iptables_chk.sh..................................................... <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/iptables_input.sh................................................... <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/iptables_input.sh................................................... <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/iptables_output.sh.................................................. <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/wireless_check.sh................................................... <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: fail
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/world_writable_files.sh............................................. 1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/no_unowned_files_and_directories.sh................................. 3 seconds: pass
+- /var/tmp/cis/Assessor-CLI/sce/no_ungrouped_files_and_directories.sh............................... 3 seconds: pass
+- /var/tmp/cis/Assessor-CLI/sce/root_path.sh........................................................ <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/users_own_home_directory.sh......................................... <1 second: pass
+SCE assessment complete.
+
+- Evaluating Checklist Rules
+01/234: Ensure mounting of cramfs filesystems is disabled........................................... Pass
+02/234: Ensure mounting of vFAT filesystems is limited.............................................. Not Selected
+03/234: Ensure mounting of squashfs filesystems is disabled......................................... Pass
+04/234: Ensure mounting of udf filesystems is disabled.............................................. Pass
+05/234: Ensure /tmp is configured................................................................... Pass
+06/234: Ensure nodev option set on /tmp partition................................................... Pass
+07/234: Ensure nosuid option set on /tmp partition.................................................. Pass
+08/234: Ensure noexec option set on /tmp partition.................................................. Pass
+09/234: Ensure separate partition exists for /var................................................... Not Selected
+10/234: Ensure separate partition exists for /var/tmp............................................... Not Selected
+11/234: Ensure nodev option set on /var/tmp partition............................................... Pass
+12/234: Ensure nosuid option set on /var/tmp partition.............................................. Pass
+13/234: Ensure noexec option set on /var/tmp partition.............................................. Pass
+14/234: Ensure separate partition exists for /var/log............................................... Not Selected
+15/234: Ensure separate partition exists for /var/log/audit......................................... Not Selected
+16/234: Ensure separate partition exists for /home.................................................. Not Selected
+17/234: Ensure nodev option set on /home partition.................................................. Pass
+18/234: Ensure nodev option set on /dev/shm partition............................................... Pass
+19/234: Ensure nosuid option set on /dev/shm partition.............................................. Pass
+20/234: Ensure noexec option set on /dev/shm partition.............................................. Pass
+21/234: Ensure nodev option set on removable media partitions....................................... Not Checked
+22/234: Ensure nosuid option set on removable media partitions...................................... Not Checked
+23/234: Ensure noexec option set on removable media partitions...................................... Not Checked
+24/234: Ensure sticky bit is set on all world-writable directories.................................. Pass
+25/234: Disable Automounting........................................................................ Pass
+26/234: Disable USB Storage......................................................................... Pass
+27/234: Ensure Red Hat Subscription Manager connection is configured................................ Not Checked
+28/234: Disable the rhnsd Daemon.................................................................... Informational
+29/234: Ensure GPG keys are configured.............................................................. Not Checked
+30/234: Ensure gpgcheck is globally activated....................................................... Pass
+31/234: Ensure package manager repositories are configured.......................................... Not Checked
+32/234: Ensure sudo is installed.................................................................... Pass
+33/234: Ensure sudo commands use pty................................................................ Fail
+34/234: Ensure sudo log file exists................................................................. Pass
+35/234: Ensure AIDE is installed.................................................................... Pass
+36/234: Ensure filesystem integrity is regularly checked............................................ Pass
+37/234: Ensure permissions on bootloader config are configured...................................... Pass
+38/234: Ensure bootloader password is set........................................................... Fail
+39/234: Ensure authentication required for single user mode......................................... Pass
+40/234: Ensure core dumps are restricted............................................................ Pass
+41/234: Ensure address space layout randomization (ASLR) is enabled................................. Pass
+42/234: Ensure SELinux is installed................................................................. Not Selected
+43/234: Ensure SELinux is not disabled in bootloader configuration.................................. Not Selected
+44/234: Ensure SELinux policy is configured......................................................... Not Selected
+45/234: Ensure the SELinux state is enforcing....................................................... Not Selected
+46/234: Ensure no unconfined services exist......................................................... Not Selected
+47/234: Ensure SETroubleshoot is not installed...................................................... Not Selected
+48/234: Ensure the MCS Translation Service (mcstrans) is not installed.............................. Not Selected
+49/234: Ensure message of the day is configured properly............................................ Pass
+50/234: Ensure local login warning banner is configured properly.................................... Pass
+51/234: Ensure remote login warning banner is configured properly................................... Pass
+52/234: Ensure permissions on /etc/motd are configured.............................................. Pass
+53/234: Ensure permissions on /etc/issue are configured............................................. Pass
+54/234: Ensure permissions on /etc/issue.net are configured......................................... Pass
+55/234: Ensure GDM login banner is configured....................................................... Pass
+56/234: Ensure updates, patches, and additional security software are installed..................... Fail
+57/234: Ensure system-wide crypto policy is not legacy.............................................. Pass
+58/234: Ensure system-wide crypto policy is FUTURE or FIPS.......................................... Not Selected
+59/234: Ensure xinetd is not installed.............................................................. Pass
+60/234: Ensure time synchronization is in use....................................................... Informational
+61/234: Ensure chrony is configured................................................................. Pass
+62/234: Ensure X Window System is not installed..................................................... Fail
+63/234: Ensure rsync service is not enabled......................................................... Pass
+64/234: Ensure Avahi Server is not enabled.......................................................... Pass
+65/234: Ensure SNMP Server is not enabled........................................................... Pass
+66/234: Ensure HTTP Proxy Server is not enabled..................................................... Pass
+67/234: Ensure Samba is not enabled................................................................. Pass
+68/234: Ensure IMAP and POP3 server is not enabled.................................................. Pass
+69/234: Ensure HTTP server is not enabled........................................................... Pass
+70/234: Ensure FTP Server is not enabled............................................................ Pass
+71/234: Ensure DNS Server is not enabled............................................................ Pass
+72/234: Ensure NFS is not enabled................................................................... Pass
+73/234: Ensure  RPC is not enabled.................................................................. Pass
+74/234: Ensure LDAP server is not enabled........................................................... Pass
+75/234: Ensure DHCP Server is not enabled........................................................... Pass
+76/234: Ensure CUPS is not enabled.................................................................. Pass
+77/234: Ensure NIS Server is not enabled............................................................ Pass
+78/234: Ensure mail transfer agent is configured for local-only mode................................ Pass
+79/234: Ensure NIS Client is not installed.......................................................... Pass
+80/234: Ensure telnet client is not installed....................................................... Pass
+81/234: Ensure LDAP client is not installed......................................................... Pass
+82/234: Ensure IP forwarding is disabled............................................................ Pass
+83/234: Ensure packet redirect sending is disabled.................................................. Pass
+84/234: Ensure source routed packets are not accepted............................................... Fail
+85/234: Ensure ICMP redirects are not accepted...................................................... Pass
+86/234: Ensure secure ICMP redirects are not accepted............................................... Pass
+87/234: Ensure suspicious packets are logged........................................................ Pass
+88/234: Ensure broadcast ICMP requests are ignored.................................................. Pass
+89/234: Ensure bogus ICMP responses are ignored..................................................... Pass
+90/234: Ensure Reverse Path Filtering is enabled.................................................... Pass
+91/234: Ensure TCP SYN Cookies is enabled........................................................... Pass
+92/234: Ensure IPv6 router advertisements are not accepted.......................................... Pass
+93/234: Ensure DCCP is disabled..................................................................... Not Selected
+94/234: Ensure SCTP is disabled..................................................................... Not Selected
+95/234: Ensure RDS is disabled...................................................................... Not Selected
+96/234: Ensure TIPC is disabled..................................................................... Not Selected
+97/234: Ensure a Firewall package is installed...................................................... Pass
+98/234: Ensure firewalld service is enabled and running............................................. Pass
+99/234: Ensure iptables is not enabled.............................................................. Pass
+100/234: Ensure nftables is not enabled............................................................. Pass
+101/234: Ensure default zone is set................................................................. Pass
+102/234: Ensure network interfaces are assigned to appropriate zone................................. Not Checked
+103/234: Ensure unnecessary services and ports are not accepted..................................... Not Checked
+104/234: Ensure iptables are flushed................................................................ Not Checked
+105/234: Ensure a table exists...................................................................... Pass
+106/234: Ensure base chains exist................................................................... Pass
+107/234: Ensure loopback traffic is configured...................................................... Pass
+108/234: Ensure outbound and established connections are configured................................. Not Checked
+109/234: Ensure default deny firewall policy........................................................ Pass
+110/234: Ensure nftables service is enabled......................................................... Pass
+111/234: Ensure nftables rules are permanent........................................................ Pass
+112/234: Ensure default deny firewall policy........................................................ Pass
+113/234: Ensure loopback traffic is configured...................................................... Pass
+114/234: Ensure outbound and established connections are configured................................. Not Checked
+115/234: Ensure firewall rules exist for all open ports............................................. Pass
+116/234: Ensure IPv6 default deny firewall policy................................................... Pass
+117/234: Ensure IPv6 loopback traffic is configured................................................. Pass
+118/234: Ensure IPv6 outbound and established connections are configured............................ Not Checked
+119/234: Ensure IPv6 firewall rules exist for all open ports........................................ Not Checked
+120/234: Ensure wireless interfaces are disabled.................................................... Pass
+121/234: Disable IPv6............................................................................... Not Selected
+122/234: Ensure auditd is installed................................................................. Not Selected
+123/234: Ensure auditd service is enabled........................................................... Not Selected
+124/234: Ensure auditing for processes that start prior to auditd is enabled........................ Not Selected
+125/234: Ensure audit_backlog_limit is sufficient................................................... Not Selected
+126/234: Ensure audit log storage size is configured................................................ Not Selected
+127/234: Ensure audit logs are not automatically deleted............................................ Not Selected
+128/234: Ensure system is disabled when audit logs are full......................................... Not Selected
+129/234: Ensure changes to system administration scope (sudoers) is collected....................... Not Selected
+130/234: Ensure login and logout events are collected............................................... Not Selected
+131/234: Ensure session initiation information is collected......................................... Not Selected
+132/234: Ensure events that modify date and time information are collected.......................... Not Selected
+133/234: Ensure events that modify the system's Mandatory Access Controls are collected............. Not Selected
+134/234: Ensure events that modify the system's network environment are collected................... Not Selected
+135/234: Ensure discretionary access control permission modification events are collected........... Not Selected
+136/234: Ensure unsuccessful unauthorized file access attempts are collected........................ Not Selected
+137/234: Ensure events that modify user/group information are collected............................. Not Selected
+138/234: Ensure successful file system mounts are collected......................................... Not Selected
+139/234: Ensure use of privileged commands is collected............................................. Not Selected
+140/234: Ensure file deletion events by users are collected......................................... Not Selected
+141/234: Ensure kernel module loading and unloading is collected.................................... Not Selected
+142/234: Ensure system administrator actions (sudolog) are collected................................ Not Selected
+143/234: Ensure the audit configuration is immutable................................................ Not Selected
+144/234: Ensure rsyslog is installed................................................................ Pass
+145/234: Ensure rsyslog Service is enabled.......................................................... Pass
+146/234: Ensure rsyslog default file permissions configured......................................... Pass
+147/234: Ensure logging is configured............................................................... Not Checked
+148/234: Ensure rsyslog is configured to send logs to a remote log host............................. Pass
+149/234: Ensure remote rsyslog messages are only accepted on designated log hosts................... Not Checked
+150/234: Ensure journald is configured to send logs to rsyslog...................................... Pass
+151/234: Ensure journald is configured to compress large log files.................................. Pass
+152/234: Ensure journald is configured to write logfiles to persistent disk......................... Pass
+153/234: Ensure permissions on all logfiles are configured.......................................... Pass
+154/234: Ensure logrotate is configured............................................................. Not Checked
+155/234: Ensure cron daemon is enabled.............................................................. Pass
+156/234: Ensure permissions on /etc/crontab are configured.......................................... Pass
+157/234: Ensure permissions on /etc/cron.hourly are configured...................................... Pass
+158/234: Ensure permissions on /etc/cron.daily are configured....................................... Pass
+159/234: Ensure permissions on /etc/cron.weekly are configured...................................... Pass
+160/234: Ensure permissions on /etc/cron.monthly are configured..................................... Pass
+161/234: Ensure permissions on /etc/cron.d are configured........................................... Pass
+162/234: Ensure at/cron is restricted to authorized users........................................... Pass
+163/234: Ensure permissions on /etc/ssh/sshd_config are configured.................................. Pass
+164/234: Ensure SSH access is limited............................................................... Fail
+165/234: Ensure permissions on SSH private host key files are configured............................ Pass
+166/234: Ensure permissions on SSH public host key files are configured............................. Pass
+167/234: Ensure SSH LogLevel is appropriate......................................................... Pass
+168/234: Ensure SSH X11 forwarding is disabled...................................................... Not Selected
+169/234: Ensure SSH MaxAuthTries is set to 4 or less................................................ Pass
+170/234: Ensure SSH IgnoreRhosts is enabled......................................................... Pass
+171/234: Ensure SSH HostbasedAuthentication is disabled............................................. Pass
+172/234: Ensure SSH root login is disabled.......................................................... Pass
+173/234: Ensure SSH PermitEmptyPasswords is disabled................................................ Pass
+174/234: Ensure SSH PermitUserEnvironment is disabled............................................... Pass
+175/234: Ensure SSH Idle Timeout Interval is configured............................................. Pass
+176/234: Ensure SSH LoginGraceTime is set to one minute or less..................................... Pass
+177/234: Ensure SSH warning banner is configured.................................................... Pass
+178/234: Ensure SSH PAM is enabled.................................................................. Pass
+179/234: Ensure SSH AllowTcpForwarding is disabled.................................................. Not Selected
+180/234: Ensure SSH MaxStartups is configured....................................................... Pass
+181/234: Ensure SSH MaxSessions is set to 4 or less................................................. Pass
+182/234: Ensure system-wide crypto policy is not over-ridden........................................ Pass
+183/234: Create custom authselect profile........................................................... Pass
+184/234: Select authselect profile.................................................................. Pass
+185/234: Ensure authselect includes with-faillock................................................... Pass
+186/234: Ensure password creation requirements are configured....................................... Pass
+187/234: Ensure lockout for failed password attempts is configured.................................. Pass
+188/234: Ensure password reuse is limited........................................................... Pass
+189/234: Ensure password hashing algorithm is SHA-512............................................... Pass
+190/234: Ensure password expiration is 365 days or less............................................. Pass
+191/234: Ensure minimum days between password changes is 7 or more.................................. Pass
+192/234: Ensure password expiration warning days is 7 or more....................................... Pass
+193/234: Ensure inactive password lock is 30 days or less........................................... Pass
+194/234: Ensure all users last password change date is in the past.................................. Pass
+195/234: Ensure system accounts are secured......................................................... Fail
+196/234: Ensure default user shell timeout is 900 seconds or less................................... Fail
+197/234: Ensure default group for the root account is GID 0......................................... Pass
+198/234: Ensure default user umask is 027 or more restrictive....................................... Fail
+199/234: Ensure root login is restricted to system console.......................................... Not Checked
+200/234: Ensure access to the su command is restricted.............................................. Pass
+201/234: Audit system file permissions.............................................................. Not Selected
+202/234: Ensure permissions on /etc/passwd are configured........................................... Pass
+203/234: Ensure permissions on /etc/shadow are configured........................................... Pass
+204/234: Ensure permissions on /etc/group are configured............................................ Pass
+205/234: Ensure permissions on /etc/gshadow are configured.......................................... Pass
+206/234: Ensure permissions on /etc/passwd- are configured.......................................... Pass
+207/234: Ensure permissions on /etc/shadow- are configured.......................................... Pass
+208/234: Ensure permissions on /etc/group- are configured........................................... Pass
+209/234: Ensure permissions on /etc/gshadow- are configured......................................... Pass
+210/234: Ensure no world writable files exist....................................................... Pass
+211/234: Ensure no unowned files or directories exist............................................... Pass
+212/234: Ensure no ungrouped files or directories exist............................................. Pass
+213/234: Audit SUID executables..................................................................... Not Checked
+214/234: Audit SGID executables..................................................................... Not Checked
+215/234: Ensure password fields are not empty....................................................... Pass
+216/234: Ensure no legacy "+" entries exist in /etc/passwd.......................................... Pass
+217/234: Ensure root PATH Integrity................................................................. Pass
+218/234: Ensure no legacy "+" entries exist in /etc/shadow.......................................... Pass
+219/234: Ensure no legacy "+" entries exist in /etc/group........................................... Pass
+220/234: Ensure root is the only UID 0 account...................................................... Pass
+221/234: Ensure users' home directories permissions are 750 or more restrictive..................... Pass
+222/234: Ensure users own their home directories.................................................... Pass
+223/234: Ensure users' dot files are not group or world writable.................................... Pass
+224/234: Ensure no users have .forward files........................................................ Pass
+225/234: Ensure no users have .netrc files.......................................................... Pass
+226/234: Ensure users' .netrc Files are not group or world accessible............................... Pass
+227/234: Ensure no users have .rhosts files......................................................... Pass
+228/234: Ensure all groups in /etc/passwd exist in /etc/group....................................... Pass
+229/234: Ensure no duplicate UIDs exist............................................................. Pass
+230/234: Ensure no duplicate GIDs exist............................................................. Pass
+231/234: Ensure no duplicate user names exist....................................................... Pass
+232/234: Ensure no duplicate group names exist...................................................... Pass
+233/234: Ensure shadow group is empty............................................................... Pass
+234/234: Ensure all users' home directories exist................................................... Pass
+
+-----------------------------------------------------------------------------
+ ***** Assessment Results Summary *****
+-----------------------------------------------------------------------------
+   Total # of Results: 234
+ Total Scored Results: 169
+           Total Pass: 160
+           Total Fail: 9
+          Total Error: 0
+        Total Unknown: 0
+ Total Not Applicable: 0
+    Total Not Checked: 19
+   Total Not Selected: 44
+  Total Informational: 2
+-----------------------------------------------------------------------------
+ ***** Assessment Scoring *****
+-----------------------------------------------------------------------------
+         Score Earned: 160.0
+    Maximum Available: 169.0
+                Total: 94.67%
+-----------------------------------------------------------------------------
+
+- Generating Checklist Results...
+
+Ending Assessment - Date & Time: 10-08-2020 05:26:42
+Total Assessment Time: 33 seconds
+- Generating Asset Reporting Format.
+- Collecting Checklist Results.
+- Combining Results.
+- Saving Results.
+- Generating Data-Stream Collection.
+- Data-Stream Collection Generated.
+- Asset Reporting Format Generated.
+
+ ***** Writing Assessment Results ***** 
+ - Reports saving to /var/tmp/cis/reports
+ -- after-20201008T052642Z-ARF.xml
+Assessment Complete for Checklist: CIS Red Hat Enterprise Linux 8 Benchmark
+-----------------------------------------------------------
+Disconnecting Session.
+Exiting; Exit Code: 0
