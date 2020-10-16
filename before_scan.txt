@@ -29,7 +29,7 @@ Selected Checklist 'CIS Red Hat Enterprise Linux 8 Benchmark'
 Selected Profile 'Level 1 - Server'
 Starting Assessment
 ----------------------- ASSESSMENT TARGET -----------------------------------
-       Hostname: ip-172-16-24-163.us-west-1.compute.internal
+       Hostname: ip-172-16-175-92.us-west-1.compute.internal
         OS Name: linux
      OS Version: 4.18.0-193.el8.x86_64
 OS Architecture: x86_64
@@ -39,11 +39,11 @@ Interfaces:
     IP: 127.0.0.1
    MAC: 00:00:00:00:00:00
   Name: eth0
-    IP: 172.16.24.163
-   MAC: 02:a7:d2:0c:29:5f
+    IP: 172.16.175.92
+   MAC: 02:40:2e:35:08:e7
 -----------------------------------------------------------------------------
 
-Starting Assessment - Date & Time: 10-08-2020 05:11:15
+Starting Assessment - Date & Time: 10-16-2020 16:40:22
 -----------------------------------------------------------------------------
  Checklist Title: CIS Red Hat Enterprise Linux 8 Benchmark
     Checklist ID: xccdf_org.cisecurity.benchmarks_benchmark_1.0.0.1_CIS_Red_Hat_Enterprise_Linux_8_Benchmark
@@ -57,7 +57,7 @@ Assessing Platform Applicability
 
 
 Starting assessment of OVAL Definitions:
-- Resolving Values.................................................................................. 3 seconds: Done
+- Resolving Values.................................................................................. 2 seconds: Done
 
 - Collecting System Characteristics
 -- [obj:659432] Ensure kernel module cramfs is not loadable......................................... <1 second: Collected
@@ -126,7 +126,7 @@ Starting assessment of OVAL Definitions:
 -- [obj:659139] Ensure package name equals 'xinetd' is not installed................................ <1 second: Collected
 -- [obj:659426] Ensure package name equals 'chrony' is installed.................................... <1 second: Collected
 -- [obj:659430] Ensure at least one file named /etc...ts and matches pattern ^\s*(server|pool)\s+\S+ <1 second: Collected
--- [obj:659434] Linux Custom Object "chronyd is running as chrony user"............................. <1 second: Collected
+-- [obj:659434] Linux Custom Object "chronyd is running as chrony user"............................. 1 second: Collected
 -- [obj:659437] Ensure package name equals 'chrony' is not installed................................ <1 second: Collected
 -- [obj:659140] Ensure package name pattern match '^xorg-x11.*' is not installed.................... <1 second: Collected
 -- [obj:659142] Ensure package name pattern match '^xserver-xorg.*' is not installed................ <1 second: Collected
@@ -993,8 +993,8 @@ SCE assessment complete.
 
 - Generating Checklist Results...
 
-Ending Assessment - Date & Time: 10-08-2020 05:11:46
-Total Assessment Time: 31 seconds
+Ending Assessment - Date & Time: 10-16-2020 16:40:53
+Total Assessment Time: 30 seconds
 - Generating Asset Reporting Format.
 - Collecting Checklist Results.
 - Combining Results.
@@ -1005,7 +1005,7 @@ Total Assessment Time: 31 seconds
 
  ***** Writing Assessment Results ***** 
  - Reports saving to /var/tmp/cis/reports
- -- before-20201008T051146Z-ARF.xml
+ -- before-20201016T164053Z-ARF.xml
 Assessment Complete for Checklist: CIS Red Hat Enterprise Linux 8 Benchmark
 -----------------------------------------------------------
 Disconnecting Session.
