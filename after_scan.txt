@@ -29,7 +29,7 @@ Selected Checklist 'CIS Red Hat Enterprise Linux 8 Benchmark'
 Selected Profile 'Level 1 - Server'
 Starting Assessment
 ----------------------- ASSESSMENT TARGET -----------------------------------
-       Hostname: ip-172-16-28-87.us-west-1.compute.internal
+       Hostname: ip-172-16-149-109.us-west-1.compute.internal
         OS Name: linux
      OS Version: 4.18.0-193.el8.x86_64
 OS Architecture: x86_64
@@ -39,11 +39,11 @@ Interfaces:
     IP: 127.0.0.1
    MAC: 00:00:00:00:00:00
   Name: eth0
-    IP: 172.16.28.87
-   MAC: 06:bb:83:af:6b:0f
+    IP: 172.16.149.109
+   MAC: 06:20:6a:ec:d8:49
 -----------------------------------------------------------------------------
 
-Starting Assessment - Date & Time: 10-16-2020 18:23:54
+Starting Assessment - Date & Time: 10-19-2020 16:41:33
 -----------------------------------------------------------------------------
  Checklist Title: CIS Red Hat Enterprise Linux 8 Benchmark
     Checklist ID: xccdf_org.cisecurity.benchmarks_benchmark_1.0.0.1_CIS_Red_Hat_Enterprise_Linux_8_Benchmark
@@ -993,8 +993,8 @@ SCE assessment complete.
 
 - Generating Checklist Results...
 
-Ending Assessment - Date & Time: 10-16-2020 18:24:27
-Total Assessment Time: 32 seconds
+Ending Assessment - Date & Time: 10-19-2020 16:42:07
+Total Assessment Time: 33 seconds
 - Generating Asset Reporting Format.
 - Collecting Checklist Results.
 - Combining Results.
@@ -1005,7 +1005,7 @@ Total Assessment Time: 32 seconds
 
  ***** Writing Assessment Results ***** 
  - Reports saving to /var/tmp/cis/reports
- -- after-20201016T182427Z-ARF.xml
+ -- after-20201019T164207Z-ARF.xml
 Assessment Complete for Checklist: CIS Red Hat Enterprise Linux 8 Benchmark
 -----------------------------------------------------------
 Disconnecting Session.

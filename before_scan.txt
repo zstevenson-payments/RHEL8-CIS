@@ -29,7 +29,7 @@ Selected Checklist 'CIS Red Hat Enterprise Linux 8 Benchmark'
 Selected Profile 'Level 1 - Server'
 Starting Assessment
 ----------------------- ASSESSMENT TARGET -----------------------------------
-       Hostname: ip-172-16-28-87.us-west-1.compute.internal
+       Hostname: ip-172-16-149-109.us-west-1.compute.internal
         OS Name: linux
      OS Version: 4.18.0-193.el8.x86_64
 OS Architecture: x86_64
@@ -39,11 +39,11 @@ Interfaces:
     IP: 127.0.0.1
    MAC: 00:00:00:00:00:00
   Name: eth0
-    IP: 172.16.28.87
-   MAC: 06:bb:83:af:6b:0f
+    IP: 172.16.149.109
+   MAC: 06:20:6a:ec:d8:49
 -----------------------------------------------------------------------------
 
-Starting Assessment - Date & Time: 10-16-2020 18:11:50
+Starting Assessment - Date & Time: 10-19-2020 16:29:20
 -----------------------------------------------------------------------------
  Checklist Title: CIS Red Hat Enterprise Linux 8 Benchmark
     Checklist ID: xccdf_org.cisecurity.benchmarks_benchmark_1.0.0.1_CIS_Red_Hat_Enterprise_Linux_8_Benchmark
@@ -424,7 +424,7 @@ Starting assessment of OVAL Definitions:
 38/286: [def:659218] Ensure filesystem integrity is regularly checked............................... <1 second: false
 39/286: [def:659222] Ensure filesystem integrity is regularly checked............................... <1 second: false
 40/286: [def:659217] Ensure permissions on bootloader config are configured......................... <1 second: false
-41/286: [def:659221] Ensure permissions on bootloader config are configured......................... <1 second: true
+41/286: [def:659221] Ensure permissions on bootloader config are configured......................... <1 second: false
 42/286: [def:659225] Ensure bootloader password is set.............................................. <1 second: false
 43/286: [def:659230] Ensure authentication required for single user mode............................ <1 second: true
 44/286: [def:659231] Ensure authentication required for single user mode............................ <1 second: true
@@ -682,7 +682,7 @@ Starting assessment of OVAL Definitions:
 OVAL Definitions assessment complete.
 
 Starting assessment of SCE Components:
-- /var/tmp/cis/Assessor-CLI/sce/world_writable_dirs_sticky.sh....................................... <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/world_writable_dirs_sticky.sh....................................... 1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
@@ -694,7 +694,7 @@ Starting assessment of SCE Components:
 - /var/tmp/cis/Assessor-CLI/sce/wbmotd.sh........................................................... <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/wbissue.sh.......................................................... <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/wbissue.net.sh...................................................... <1 second: fail
-- /var/tmp/cis/Assessor-CLI/sce/yum_no_security_updates.sh.......................................... 5 seconds: fail
+- /var/tmp/cis/Assessor-CLI/sce/yum_no_security_updates.sh.......................................... 7 seconds: fail
 - /var/tmp/cis/Assessor-CLI/sce/nft_tables.sh....................................................... <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/nft_ruleset.sh...................................................... <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/nft_ruleset.sh...................................................... <1 second: fail
@@ -993,8 +993,8 @@ SCE assessment complete.
 
 - Generating Checklist Results...
 
-Ending Assessment - Date & Time: 10-16-2020 18:12:20
-Total Assessment Time: 29 seconds
+Ending Assessment - Date & Time: 10-19-2020 16:29:53
+Total Assessment Time: 33 seconds
 - Generating Asset Reporting Format.
 - Collecting Checklist Results.
 - Combining Results.
@@ -1005,7 +1005,7 @@ Total Assessment Time: 29 seconds
 
  ***** Writing Assessment Results ***** 
  - Reports saving to /var/tmp/cis/reports
- -- before-20201016T181220Z-ARF.xml
+ -- before-20201019T162953Z-ARF.xml
 Assessment Complete for Checklist: CIS Red Hat Enterprise Linux 8 Benchmark
 -----------------------------------------------------------
 Disconnecting Session.
