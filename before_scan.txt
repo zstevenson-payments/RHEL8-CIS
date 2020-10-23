@@ -29,7 +29,7 @@ Selected Checklist 'CIS Red Hat Enterprise Linux 8 Benchmark'
 Selected Profile 'Level 1 - Server'
 Starting Assessment
 ----------------------- ASSESSMENT TARGET -----------------------------------
-       Hostname: ip-172-16-254-98.us-west-1.compute.internal
+       Hostname: ip-172-16-67-246.us-west-1.compute.internal
         OS Name: linux
      OS Version: 4.18.0-193.el8.x86_64
 OS Architecture: x86_64
@@ -39,11 +39,11 @@ Interfaces:
     IP: 127.0.0.1
    MAC: 00:00:00:00:00:00
   Name: eth0
-    IP: 172.16.254.98
-   MAC: 02:81:58:d7:57:2f
+    IP: 172.16.67.246
+   MAC: 02:5e:6c:90:95:5b
 -----------------------------------------------------------------------------
 
-Starting Assessment - Date & Time: 10-22-2020 18:31:34
+Starting Assessment - Date & Time: 10-23-2020 16:01:14
 -----------------------------------------------------------------------------
  Checklist Title: CIS Red Hat Enterprise Linux 8 Benchmark
     Checklist ID: xccdf_org.cisecurity.benchmarks_benchmark_1.0.0.1_CIS_Red_Hat_Enterprise_Linux_8_Benchmark
@@ -57,7 +57,7 @@ Assessing Platform Applicability
 
 
 Starting assessment of OVAL Definitions:
-- Resolving Values.................................................................................. 3 seconds: Done
+- Resolving Values.................................................................................. 2 seconds: Done
 
 - Collecting System Characteristics
 -- [obj:659432] Ensure kernel module cramfs is not loadable......................................... <1 second: Collected
@@ -126,7 +126,7 @@ Starting assessment of OVAL Definitions:
 -- [obj:659139] Ensure package name equals 'xinetd' is not installed................................ <1 second: Collected
 -- [obj:659426] Ensure package name equals 'chrony' is installed.................................... <1 second: Collected
 -- [obj:659430] Ensure at least one file named /etc...ts and matches pattern ^\s*(server|pool)\s+\S+ <1 second: Collected
--- [obj:659434] Linux Custom Object "chronyd is running as chrony user"............................. <1 second: Collected
+-- [obj:659434] Linux Custom Object "chronyd is running as chrony user"............................. 1 second: Collected
 -- [obj:659437] Ensure package name equals 'chrony' is not installed................................ <1 second: Collected
 -- [obj:659140] Ensure package name pattern match '^xorg-x11.*' is not installed.................... <1 second: Collected
 -- [obj:659142] Ensure package name pattern match '^xserver-xorg.*' is not installed................ <1 second: Collected
@@ -381,7 +381,7 @@ Starting assessment of OVAL Definitions:
 -- [obj:659328] Linux Custom Object "Shadow Group is Empty"......................................... <1 second: Collected
 -- [obj:659275] Linux Custom Object "All User Home Directories Exist"............................... <1 second: Collected
 
-- System Characteristics Collection: 6 seconds
+- System Characteristics Collection: 7 seconds
 
 - Evaluating Definitions
 01/286: [def:659432] Ensure mounting of cramfs filesystems is disabled.............................. <1 second: false
@@ -682,7 +682,7 @@ Starting assessment of OVAL Definitions:
 OVAL Definitions assessment complete.
 
 Starting assessment of SCE Components:
-- /var/tmp/cis/Assessor-CLI/sce/world_writable_dirs_sticky.sh....................................... <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/world_writable_dirs_sticky.sh....................................... 1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
@@ -694,7 +694,7 @@ Starting assessment of SCE Components:
 - /var/tmp/cis/Assessor-CLI/sce/wbmotd.sh........................................................... <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/wbissue.sh.......................................................... <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/wbissue.net.sh...................................................... <1 second: fail
-- /var/tmp/cis/Assessor-CLI/sce/yum_no_security_updates.sh.......................................... 5 seconds: fail
+- /var/tmp/cis/Assessor-CLI/sce/yum_no_security_updates.sh.......................................... 6 seconds: fail
 - /var/tmp/cis/Assessor-CLI/sce/nft_tables.sh....................................................... <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/nft_ruleset.sh...................................................... <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/nft_ruleset.sh...................................................... <1 second: fail
@@ -993,8 +993,8 @@ SCE assessment complete.
 
 - Generating Checklist Results...
 
-Ending Assessment - Date & Time: 10-22-2020 18:32:04
-Total Assessment Time: 30 seconds
+Ending Assessment - Date & Time: 10-23-2020 16:01:46
+Total Assessment Time: 32 seconds
 - Generating Asset Reporting Format.
 - Collecting Checklist Results.
 - Combining Results.
@@ -1005,7 +1005,7 @@ Total Assessment Time: 30 seconds
 
  ***** Writing Assessment Results ***** 
  - Reports saving to /var/tmp/cis/reports
- -- before-20201022T183204Z-ARF.xml
+ -- before-20201023T160146Z-ARF.xml
 Assessment Complete for Checklist: CIS Red Hat Enterprise Linux 8 Benchmark
 -----------------------------------------------------------
 Disconnecting Session.
