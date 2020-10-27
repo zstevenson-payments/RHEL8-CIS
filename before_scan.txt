@@ -29,7 +29,7 @@ Selected Checklist 'CIS Red Hat Enterprise Linux 8 Benchmark'
 Selected Profile 'Level 1 - Server'
 Starting Assessment
 ----------------------- ASSESSMENT TARGET -----------------------------------
-       Hostname: ip-172-16-206-63.us-west-1.compute.internal
+       Hostname: ip-172-16-242-126.us-west-1.compute.internal
         OS Name: linux
      OS Version: 4.18.0-193.el8.x86_64
 OS Architecture: x86_64
@@ -39,11 +39,11 @@ Interfaces:
     IP: 127.0.0.1
    MAC: 00:00:00:00:00:00
   Name: eth0
-    IP: 172.16.206.63
-   MAC: 02:0e:8a:a9:ab:35
+    IP: 172.16.242.126
+   MAC: 02:96:ae:24:75:97
 -----------------------------------------------------------------------------
 
-Starting Assessment - Date & Time: 10-27-2020 12:20:52
+Starting Assessment - Date & Time: 10-27-2020 13:13:07
 -----------------------------------------------------------------------------
  Checklist Title: CIS Red Hat Enterprise Linux 8 Benchmark
     Checklist ID: xccdf_org.cisecurity.benchmarks_benchmark_1.0.0.1_CIS_Red_Hat_Enterprise_Linux_8_Benchmark
@@ -381,7 +381,7 @@ Starting assessment of OVAL Definitions:
 -- [obj:659328] Linux Custom Object "Shadow Group is Empty"......................................... <1 second: Collected
 -- [obj:659275] Linux Custom Object "All User Home Directories Exist"............................... <1 second: Collected
 
-- System Characteristics Collection: 6 seconds
+- System Characteristics Collection: 7 seconds
 
 - Evaluating Definitions
 01/286: [def:659432] Ensure mounting of cramfs filesystems is disabled.............................. <1 second: false
@@ -424,7 +424,7 @@ Starting assessment of OVAL Definitions:
 38/286: [def:659218] Ensure filesystem integrity is regularly checked............................... <1 second: false
 39/286: [def:659222] Ensure filesystem integrity is regularly checked............................... <1 second: false
 40/286: [def:659217] Ensure permissions on bootloader config are configured......................... <1 second: false
-41/286: [def:659221] Ensure permissions on bootloader config are configured......................... <1 second: false
+41/286: [def:659221] Ensure permissions on bootloader config are configured......................... <1 second: true
 42/286: [def:659225] Ensure bootloader password is set.............................................. <1 second: false
 43/286: [def:659230] Ensure authentication required for single user mode............................ <1 second: true
 44/286: [def:659231] Ensure authentication required for single user mode............................ <1 second: true
@@ -682,7 +682,7 @@ Starting assessment of OVAL Definitions:
 OVAL Definitions assessment complete.
 
 Starting assessment of SCE Components:
-- /var/tmp/cis/Assessor-CLI/sce/world_writable_dirs_sticky.sh....................................... <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/world_writable_dirs_sticky.sh....................................... 1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
@@ -694,7 +694,7 @@ Starting assessment of SCE Components:
 - /var/tmp/cis/Assessor-CLI/sce/wbmotd.sh........................................................... <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/wbissue.sh.......................................................... <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/wbissue.net.sh...................................................... <1 second: fail
-- /var/tmp/cis/Assessor-CLI/sce/yum_no_security_updates.sh.......................................... 4 seconds: fail
+- /var/tmp/cis/Assessor-CLI/sce/yum_no_security_updates.sh.......................................... 5 seconds: fail
 - /var/tmp/cis/Assessor-CLI/sce/nft_tables.sh....................................................... <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/nft_ruleset.sh...................................................... <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/nft_ruleset.sh...................................................... <1 second: fail
@@ -727,7 +727,7 @@ Starting assessment of SCE Components:
 - /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: fail
-- /var/tmp/cis/Assessor-CLI/sce/world_writable_files.sh............................................. <1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/world_writable_files.sh............................................. 1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/no_unowned_files_and_directories.sh................................. 2 seconds: pass
 - /var/tmp/cis/Assessor-CLI/sce/no_ungrouped_files_and_directories.sh............................... 2 seconds: pass
 - /var/tmp/cis/Assessor-CLI/sce/root_path.sh........................................................ <1 second: pass
@@ -993,8 +993,8 @@ SCE assessment complete.
 
 - Generating Checklist Results...
 
-Ending Assessment - Date & Time: 10-27-2020 12:21:21
-Total Assessment Time: 28 seconds
+Ending Assessment - Date & Time: 10-27-2020 13:13:39
+Total Assessment Time: 31 seconds
 - Generating Asset Reporting Format.
 - Collecting Checklist Results.
 - Combining Results.
@@ -1005,7 +1005,7 @@ Total Assessment Time: 28 seconds
 
  ***** Writing Assessment Results ***** 
  - Reports saving to /var/tmp/cis/reports
- -- before-20201027T122121Z-ARF.xml
+ -- before-20201027T131339Z-ARF.xml
 Assessment Complete for Checklist: CIS Red Hat Enterprise Linux 8 Benchmark
 -----------------------------------------------------------
 Disconnecting Session.
