@@ -29,7 +29,7 @@ Selected Checklist 'CIS Red Hat Enterprise Linux 8 Benchmark'
 Selected Profile 'Level 1 - Server'
 Starting Assessment
 ----------------------- ASSESSMENT TARGET -----------------------------------
-       Hostname: ip-172-16-105-169.us-west-1.compute.internal
+       Hostname: ip-172-16-206-63.us-west-1.compute.internal
         OS Name: linux
      OS Version: 4.18.0-193.el8.x86_64
 OS Architecture: x86_64
@@ -39,11 +39,11 @@ Interfaces:
     IP: 127.0.0.1
    MAC: 00:00:00:00:00:00
   Name: eth0
-    IP: 172.16.105.169
-   MAC: 06:10:73:89:19:49
+    IP: 172.16.206.63
+   MAC: 02:0e:8a:a9:ab:35
 -----------------------------------------------------------------------------
 
-Starting Assessment - Date & Time: 10-23-2020 18:38:51
+Starting Assessment - Date & Time: 10-27-2020 12:20:52
 -----------------------------------------------------------------------------
  Checklist Title: CIS Red Hat Enterprise Linux 8 Benchmark
     Checklist ID: xccdf_org.cisecurity.benchmarks_benchmark_1.0.0.1_CIS_Red_Hat_Enterprise_Linux_8_Benchmark
@@ -126,7 +126,7 @@ Starting assessment of OVAL Definitions:
 -- [obj:659139] Ensure package name equals 'xinetd' is not installed................................ <1 second: Collected
 -- [obj:659426] Ensure package name equals 'chrony' is installed.................................... <1 second: Collected
 -- [obj:659430] Ensure at least one file named /etc...ts and matches pattern ^\s*(server|pool)\s+\S+ <1 second: Collected
--- [obj:659434] Linux Custom Object "chronyd is running as chrony user"............................. <1 second: Collected
+-- [obj:659434] Linux Custom Object "chronyd is running as chrony user"............................. 1 second: Collected
 -- [obj:659437] Ensure package name equals 'chrony' is not installed................................ <1 second: Collected
 -- [obj:659140] Ensure package name pattern match '^xorg-x11.*' is not installed.................... <1 second: Collected
 -- [obj:659142] Ensure package name pattern match '^xserver-xorg.*' is not installed................ <1 second: Collected
@@ -285,7 +285,7 @@ Starting assessment of OVAL Definitions:
 -- [obj:659412] Ensure at least one file named /etc...rn ^\s*(?i)ForwardToSyslog\s*=\s*yes(\s+#.*)*$ <1 second: Collected
 -- [obj:659416] Ensure at least one file named /etc...s pattern ^\s*(?i)Compress\s*=\s*yes(\s+#.*)*$ <1 second: Collected
 -- [obj:659421] Ensure at least one file named /etc...ern ^\s*(?i)Storage\s*=\s*persistent(\s+#.*)*$ <1 second: Collected
--- [obj:659163] Ensure any file(s) named .* in /var...exists and does not have permissions ----wxrwx 1 second: Collected
+-- [obj:659163] Ensure any file(s) named .* in /var...exists and does not have permissions ----wxrwx <1 second: Collected
 -- [obj:659257] Ensure standard service 'crond' is enabled.......................................... <1 second: Collected
 -- [obj:659260] Ensure at least one file named /etc...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
 -- [obj:659265] Ensure at least one file named /etc...by 0:0 and does not have permissions ---rwxrwx <1 second: Collected
@@ -381,7 +381,7 @@ Starting assessment of OVAL Definitions:
 -- [obj:659328] Linux Custom Object "Shadow Group is Empty"......................................... <1 second: Collected
 -- [obj:659275] Linux Custom Object "All User Home Directories Exist"............................... <1 second: Collected
 
-- System Characteristics Collection: 7 seconds
+- System Characteristics Collection: 6 seconds
 
 - Evaluating Definitions
 01/286: [def:659432] Ensure mounting of cramfs filesystems is disabled.............................. <1 second: false
@@ -682,7 +682,7 @@ Starting assessment of OVAL Definitions:
 OVAL Definitions assessment complete.
 
 Starting assessment of SCE Components:
-- /var/tmp/cis/Assessor-CLI/sce/world_writable_dirs_sticky.sh....................................... 1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/world_writable_dirs_sticky.sh....................................... <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sysctl_running_config.sh............................................ <1 second: pass
@@ -694,7 +694,7 @@ Starting assessment of SCE Components:
 - /var/tmp/cis/Assessor-CLI/sce/wbmotd.sh........................................................... <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/wbissue.sh.......................................................... <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/wbissue.net.sh...................................................... <1 second: fail
-- /var/tmp/cis/Assessor-CLI/sce/yum_no_security_updates.sh.......................................... 5 seconds: fail
+- /var/tmp/cis/Assessor-CLI/sce/yum_no_security_updates.sh.......................................... 4 seconds: fail
 - /var/tmp/cis/Assessor-CLI/sce/nft_tables.sh....................................................... <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/nft_ruleset.sh...................................................... <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/nft_ruleset.sh...................................................... <1 second: fail
@@ -727,7 +727,7 @@ Starting assessment of SCE Components:
 - /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: fail
 - /var/tmp/cis/Assessor-CLI/sce/sshd_running_config.sh.............................................. <1 second: fail
-- /var/tmp/cis/Assessor-CLI/sce/world_writable_files.sh............................................. 1 second: pass
+- /var/tmp/cis/Assessor-CLI/sce/world_writable_files.sh............................................. <1 second: pass
 - /var/tmp/cis/Assessor-CLI/sce/no_unowned_files_and_directories.sh................................. 2 seconds: pass
 - /var/tmp/cis/Assessor-CLI/sce/no_ungrouped_files_and_directories.sh............................... 2 seconds: pass
 - /var/tmp/cis/Assessor-CLI/sce/root_path.sh........................................................ <1 second: pass
@@ -993,8 +993,8 @@ SCE assessment complete.
 
 - Generating Checklist Results...
 
-Ending Assessment - Date & Time: 10-23-2020 18:39:23
-Total Assessment Time: 31 seconds
+Ending Assessment - Date & Time: 10-27-2020 12:21:21
+Total Assessment Time: 28 seconds
 - Generating Asset Reporting Format.
 - Collecting Checklist Results.
 - Combining Results.
@@ -1005,7 +1005,7 @@ Total Assessment Time: 31 seconds
 
  ***** Writing Assessment Results ***** 
  - Reports saving to /var/tmp/cis/reports
- -- before-20201023T183923Z-ARF.xml
+ -- before-20201027T122121Z-ARF.xml
 Assessment Complete for Checklist: CIS Red Hat Enterprise Linux 8 Benchmark
 -----------------------------------------------------------
 Disconnecting Session.

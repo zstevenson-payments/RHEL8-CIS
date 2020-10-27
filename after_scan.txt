@@ -29,7 +29,7 @@ Selected Checklist 'CIS Red Hat Enterprise Linux 8 Benchmark'
 Selected Profile 'Level 1 - Server'
 Starting Assessment
 ----------------------- ASSESSMENT TARGET -----------------------------------
-       Hostname: ip-172-16-105-169.us-west-1.compute.internal
+       Hostname: ip-172-16-206-63.us-west-1.compute.internal
         OS Name: linux
      OS Version: 4.18.0-193.el8.x86_64
 OS Architecture: x86_64
@@ -39,11 +39,11 @@ Interfaces:
     IP: 127.0.0.1
    MAC: 00:00:00:00:00:00
   Name: eth0
-    IP: 172.16.105.169
-   MAC: 06:10:73:89:19:49
+    IP: 172.16.206.63
+   MAC: 02:0e:8a:a9:ab:35
 -----------------------------------------------------------------------------
 
-Starting Assessment - Date & Time: 10-23-2020 18:51:06
+Starting Assessment - Date & Time: 10-27-2020 12:32:44
 -----------------------------------------------------------------------------
  Checklist Title: CIS Red Hat Enterprise Linux 8 Benchmark
     Checklist ID: xccdf_org.cisecurity.benchmarks_benchmark_1.0.0.1_CIS_Red_Hat_Enterprise_Linux_8_Benchmark
@@ -381,7 +381,7 @@ Starting assessment of OVAL Definitions:
 -- [obj:659328] Linux Custom Object "Shadow Group is Empty"......................................... <1 second: Collected
 -- [obj:659275] Linux Custom Object "All User Home Directories Exist"............................... <1 second: Collected
 
-- System Characteristics Collection: 7 seconds
+- System Characteristics Collection: 6 seconds
 
 - Evaluating Definitions
 01/286: [def:659432] Ensure mounting of cramfs filesystems is disabled.............................. <1 second: true
@@ -993,8 +993,8 @@ SCE assessment complete.
 
 - Generating Checklist Results...
 
-Ending Assessment - Date & Time: 10-23-2020 18:51:40
-Total Assessment Time: 34 seconds
+Ending Assessment - Date & Time: 10-27-2020 12:33:16
+Total Assessment Time: 31 seconds
 - Generating Asset Reporting Format.
 - Collecting Checklist Results.
 - Combining Results.
@@ -1005,7 +1005,7 @@ Total Assessment Time: 34 seconds
 
  ***** Writing Assessment Results ***** 
  - Reports saving to /var/tmp/cis/reports
- -- after-20201023T185140Z-ARF.xml
+ -- after-20201027T123316Z-ARF.xml
 Assessment Complete for Checklist: CIS Red Hat Enterprise Linux 8 Benchmark
 -----------------------------------------------------------
 Disconnecting Session.
