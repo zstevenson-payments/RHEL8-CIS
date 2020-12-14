@@ -386,6 +386,7 @@
 
 - name: "NOTSCORED | 1.2.3 | PATCH | Ensure GPG keys are configured"
   command: gpg --quiet --with-fingerprint /etc/pki/rpm-gpg/RPM-GPG-KEY-{{ ansible_distribution|lower }}-release
+  changed_when: false
   when:
       - rhel8cis_rule_1_2_3
       - ansible_distribution == "RedHat"
@@ -867,10 +868,12 @@
       - name: "SCORED | 1.10 | PATCH | Ensure system-wide crypto policy is not legacy | Set crypto policy"
         shell: update-crypto-policies --set "{{ rhel8cis_crypto_policy }}"
         become: true
+        changed_when: false
 
       - name: "SCORED | 1.10 | PATCH | Ensure system-wide crypto policy is not legacy | Activate crypto policy"
         shell: update-crypto-policies
         become: true
+        changed_when: false
   when:
       - rhel8cis_rule_1_10
   tags:
@@ -883,10 +886,12 @@
       - name: "SCORED | 1.11 | PATCH | Ensure system-wide crypto policy is FUTURE or FIPS| Set crypto policy"
         shell: update-crypto-policies --set "{{ rhel8cis_crypto_policy }}"
         become: true
+        changed_when: false
 
       - name: "SCORED | 1.11 | PATCH | Ensure system-wide crypto policy is FUTURE or FIPS | Activate crypto policy"
         shell: update-crypto-policies
         become: true
+        changed_when: false
   when:
       - rhel8cis_rule_1_11
   tags:
