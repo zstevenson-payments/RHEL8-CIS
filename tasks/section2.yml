@@ -60,6 +60,7 @@
       - xwindows
       - patch
       - rule_2.2.2
+  changed_when: false
 
 - name: "SCORED | 2.2.3 | PATCH | Ensure rsync service is not enabled "
   service:
