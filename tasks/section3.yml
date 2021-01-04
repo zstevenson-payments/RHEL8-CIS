@@ -341,6 +341,7 @@
 # I converted this to a command module from service since I was getting errors trying to disable the service with that module. I need to revisit
 - name: "SCORED | 3.4.2.2 | PATCH | Ensure iptables is not enabled"
   command: systemctl --now mask iptables
+  changed_when: false
   when:
       - rhel8cis_firewall == "firewalld"
       - rhel8cis_rule_3_4_2_2
