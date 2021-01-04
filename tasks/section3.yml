@@ -422,10 +422,12 @@
   block:
       - name: "NOTSCORED | 3.4.3.1 | PATCH | Ensure iptables are flushed | Flush IPv4 tables"
         command: iptables -F
+        changed_when: false
         become: yes
 
       - name: "NOTSCORED | 3.4.3.1 | PATCH | Ensure iptables are flushed | Flush IPv6 tables"
         command: ip6tables -F
+        changed_when: false
         become: yes
         when:
             - rhel8cis_ipv6_required
