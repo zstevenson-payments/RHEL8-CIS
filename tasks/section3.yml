@@ -980,7 +980,7 @@
         failed_when: no
 
       - name: "SCORED | 3.5 | AUDIT | Ensure wireless interfaces are disabled | Check if wifi is enabled"
-        command: nmcli radio all
+        command: nmcli radio wifi
         register: rhel_08_wifi_enabled
         check_mode: no
         become: true
