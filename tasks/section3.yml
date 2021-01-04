@@ -365,6 +365,8 @@
 
 - name: "SCORED | 3.4.2.4 | PATCH | Ensure default zone is set"
   command: firewall-cmd --set-default-zone="{{ rhel8cis_default_zone }}"
+  register: firewalld_output
+  changed_when: '"Warning: ZONE_ALREADY_SET: " not in firewalld_output.stderr'
   when:
       - rhel8cis_firewall == "firewalld"
       - rhel8cis_rule_3_4_2_4
